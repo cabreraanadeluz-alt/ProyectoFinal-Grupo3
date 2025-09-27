@@ -11,7 +11,21 @@
     <title>Proyecto Final-Grupo3</title>
 </head>
 <body>
-    
-    
+    <h2>Contacto</h2>
+  <p>¿Creés que falta una peli? ¿Querés dejarnos una sugerencia? Escribinos acá 👇</p>
+  <p><strong>participaeco@gmail.com</strong></p>
+
+  <form action="mailto:participaeco@gmail.com" method="post" enctype="text/plain">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+    <input type="submit" value="ENVIAR">
+  </form>
 </body>
 </html>
