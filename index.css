@@ -9,7 +9,6 @@
   flex-wrap: wrap;
 }
 
-/* ==== Columnas ==== */
 .site-footer div {
   flex: 1;
   min-width: 200px;
@@ -25,7 +24,6 @@
   margin-bottom: 8px;
 }
 
-/* ==== Enlaces ==== */
 .footer-left a,
 .footer-right a {
   color: #ccc;
@@ -33,7 +31,7 @@
   transition: color 0.3s ease;
   display: inline-flex;
   align-items: center;
-  gap: 6px; /* espacio entre icono y texto */
+  gap: 6px; 
 }
 
 .footer-left a:hover,
@@ -41,13 +39,11 @@
   color: white;
 }
 
-/* ==== Íconos ==== */
 .footer-left i,
 .footer-right i {
   font-size: 1.2em;
 }
 
-/* ==== Texto centrado ==== */
 .footer-center {
   text-align: center;
 }
@@ -56,7 +52,6 @@
   text-align: right;
 }
 
-/* ==== Responsive ==== */
 @media (max-width: 768px) {
   .site-footer {
     flex-direction: column;
