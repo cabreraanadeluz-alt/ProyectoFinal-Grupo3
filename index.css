@@ -1,0 +1,70 @@
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #000, #444);
+  color: white;
+  padding: 20px 40px;
+  font-family: 'Segoe UI', sans-serif;
+  flex-wrap: wrap;
+}
+
+/* ==== Columnas ==== */
+.site-footer div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left ul li {
+  margin-bottom: 8px;
+}
+
+/* ==== Enlaces ==== */
+.footer-left a,
+.footer-right a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* espacio entre icono y texto */
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+  color: white;
+}
+
+/* ==== Íconos ==== */
+.footer-left i,
+.footer-right i {
+  font-size: 1.2em;
+}
+
+/* ==== Texto centrado ==== */
+.footer-center {
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
