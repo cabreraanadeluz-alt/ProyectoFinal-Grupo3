@@ -628,22 +628,34 @@
     </article>
   </section>
 
-  <h2>Contacto</h2>
-  <p>¿Creés que falta una peli? ¿Querés dejarnos una sugerencia? Escribinos acá 👇</p>
-  <p><strong>participaeco@gmail.com</strong></p>
+<section class="container my-5">
+  <h2 class="mb-3 text-center">Contacto</h2>
+  <p class="text-center">
+    ¿Creés que falta una peli? ¿Querés dejarnos una sugerencia? Escribinos acá 👇<br>
+    <strong>participaeco@gmail.com</strong>
+  </p>
 
-  <form action="mailto:participaeco@gmail.com" method="post" enctype="text/plain">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+  <form action="mailto:participaeco@gmail.com" method="post" enctype="text/plain" class="mt-4">
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre y Apellido</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo">
+    </div>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+    </div>
 
-    <input type="submit" value="ENVIAR">
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu mensaje..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
+</section>
+
   <footer>
     <ul>
       <li><a href="https://www.instagram.com/eco_revieww" target="_blank">Instagram</a></li>
