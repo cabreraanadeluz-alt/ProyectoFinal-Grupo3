@@ -1,22 +1,24 @@
-section {
-  background: linear-gradient(90deg, #000, #2c2c2c);
+.top-libros {
+  background: linear-gradient(90deg, #000000, #2c2c2c);
   color: #f5f5f5;
   padding: 30px;
   border-radius: 10px;
   max-width: 1000px;
   margin: 40px auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  font-family: 'Montserrat', sans-serif;
 }
 
-section h1 {
+.top-libros h1 {
   font-size: 1.8rem;
   font-weight: 700;
   text-align: left;
   margin-bottom: 25px;
   color: #ffffff;
+  letter-spacing: 1px;
 }
 
-section ol {
+.top-libros ol {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -25,28 +27,40 @@ section ol {
   margin: 0;
 }
 
-section article {
+.top-libros article {
   background-color: #1c1c1c;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #3a3a3a;
 }
 
-section article:hover {
+.top-libros article:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-section img {
+.top-libros img {
   width: 100%;
   aspect-ratio: 2/3;
   object-fit: cover;
   border-bottom: 2px solid #3a3a3a;
 }
 
-section h3 {
+.top-libros h3 {
   font-size: 1rem;
   color: #f5f5f5;
-  margin: 12px
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.top-libros h3 a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.top-libros h3 a:hover {
+  color: #bfbfbf;
 }
