@@ -1,0 +1,66 @@
+.top-peliculas {
+  background: linear-gradient(90deg, #000000, #2c2c2c);
+  color: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-peliculas h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 25px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.top-peliculas ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.top-peliculas article {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #3a3a3a;
+}
+
+.top-peliculas article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.top-peliculas img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-bottom: 2px solid #3a3a3a;
+}
+
+.top-peliculas h3 {
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.top-peliculas h3 a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.top-peliculas h3 a:hover {
+  color: #bfbfbf;
+}
