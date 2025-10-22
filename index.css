@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+body.eco-reviews {
   font-family: 'Montserrat', sans-serif;
   background-color: #0A0A0A;
   color: #E2E8F0;
