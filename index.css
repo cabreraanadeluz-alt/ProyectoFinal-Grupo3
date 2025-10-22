@@ -64,3 +64,53 @@
 .top-libros h3 a:hover {
   color: #bfbfbf;
 }
+
+@media (max-width: 768px) {
+  .top-libros {
+    padding: 15px;
+    margin: 20px 10px;
+  }
+
+  .top-libros h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .top-libros ol {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .top-libros h3 {
+    font-size: 0.85rem;
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-libros {
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 8px;
+  }
+
+  .top-libros h1 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .top-libros ol {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .top-libros article {
+    border-radius: 6px;
+  }
+
+  .top-libros h3 {
+    font-size: 0.65rem;
+    margin: 4px 0;
+  }
+}
