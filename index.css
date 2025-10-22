@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0A0A0A;
+  color: #E2E8F0;
+}
+.logo {
+  position: fixed;
+  top: 5px;
+  left: 40px;
+  width: 70px;
+  height: 60px;
+  background-color: #2C2C2C;
+  border: 2px solid #334155;
+  border-radius: 10px;
+  z-index: 1001;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: #F8FAFC;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.logo:hover {
+  background-color: #334155;
+  box-shadow: 0 4px 12px rgba(248, 250, 252, 0.15);
+}
+header {
+  background-color: #2C2C2C;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #334155;
+}
+.buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 20px;
+}
+
+.buscador form {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+.buscador svg {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #334155;
+  pointer-events: none;
+  transition: fill 0.3s ease;
+}
+
+.buscador input {
+  width: 100%;
+  padding: 13px 20px 13px 50px;
+  border: 2px solid #334155;
+  border-radius: 30px;
+  font-size: 14px;
+  outline: none;
+  background-color: #0A0A0A;
+  color: #E2E8F0;
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buscador input::placeholder {
+  color: #E2E8F0;
+  opacity: 0.6;
+}
+
+.buscador input:focus {
+  border-color: #F8FAFC;
+  box-shadow: 0 0 0 3px rgba(248, 250, 252, 0.15);
+}
+
+.buscador form:focus-within svg {
+  fill: #E2E8F0;
+}
