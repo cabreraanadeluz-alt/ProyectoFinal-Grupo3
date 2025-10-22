@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 .site-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #000, #444);
-  color: white;
+  background: #0A0A0A;
+  border-top: 1px solid #334155;
+  color: #E2E8F0;
   padding: 20px 40px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   flex-wrap: wrap;
+  gap: 20px;
+  transition: background 0.3s ease;
 }
 
 .site-footer div {
@@ -21,25 +26,85 @@
 }
 
 .footer-left ul li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .footer-left a,
 .footer-right a {
-  color: #ccc;
+  color: #E2E8F0;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .footer-left a:hover,
 .footer-right a:hover {
-  color: white;
+  color: #F8FAFC;
+  transform: translateY(-2px);
 }
 
 .footer-center {
   text-align: center;
 }
 
+.footer-center p {
+  margin: 4px 0;
+  color: #E2E8F0;
+}
+
 .footer-right {
   text-align: right;
+}
+
+.bi {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: #F8FAFC;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover .bi,
+.footer-right a:hover .bi {
+  color: #E2E8F0;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+    gap: 10px;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    text-align: center;
+  }
+
+  .footer-left ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-left ul li {
+    margin-bottom: 0;
+  }
+
+  .footer-right p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-left a,
+  .footer-right a {
+    font-size: 0.9rem;
+  }
+
+  .bi {
+    font-size: 1rem;
+  }
 }
