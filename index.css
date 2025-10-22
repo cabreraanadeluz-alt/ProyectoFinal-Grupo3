@@ -56,7 +56,7 @@
 .top-peliculas h3 a:hover {
   color: #bfbfbf;
 }
-/* Responsive para tablets */
+
 @media (max-width: 768px) {
   .top-peliculas {
     padding: 15px;
@@ -76,7 +76,7 @@
     margin: 8px 0;
   }
 }
-/* Responsive para móviles */
+
 @media (max-width: 480px) {
   .top-peliculas {
     padding: 10px;
