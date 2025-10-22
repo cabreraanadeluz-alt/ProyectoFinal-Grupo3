@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -261,7 +262,7 @@ main {
   color: #bfbfbf;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .top-libros {
     padding: 15px;
     margin: 20px 10px;
@@ -281,7 +282,6 @@ main {
   .top-libros h3 {
     font-size: 0.85rem;
     margin: 8px 0;
-  }
 }
 
 @media (max-width: 480px) {
@@ -309,6 +309,7 @@ main {
     font-size: 0.65rem;
     margin: 4px 0;
   }
+}
 
 
 .titulo-seccion,
@@ -591,3 +592,105 @@ textarea.form-control {
   box-shadow: 0 0 0 3px rgba(248, 250, 252, 0.25);
 }
 }
+
+
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0A0A0A;
+  border-top: 1px solid #334155;
+  color: #E2E8F0;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: background 0.3s ease;
+}
+
+.site-footer div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left ul li {
+  margin-bottom: 8px;
+}
+
+.footer-left a,
+.footer-right a {
+  color: #E2E8F0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+  color: #F8FAFC;
+  transform: translateY(-2px);
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-center p {
+  margin: 4px 0;
+  color: #E2E8F0;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.bi {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: #F8FAFC;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover .bi,
+.footer-right a:hover .bi {
+  color: #E2E8F0;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+    gap: 10px;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    text-align: center;
+  }
+
+  .footer-left ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-left ul li {
+    margin-bottom: 0;
+  }
+
+  .footer-right p {
+    margin-top: 10px;
+  }
+}
+
+
