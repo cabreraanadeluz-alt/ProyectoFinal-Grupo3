@@ -1,0 +1,26 @@
+ #carouselExampleFade {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #0A0A0A;
+  }
+  
+  .carousel-image {
+    width: 135px;
+    height: 200px;
+    object-fit: cover;
+    border-color: #334155 !important;
+  }
+  
+  .carousel-center {
+    width: 220px;
+  }
+  
+  .carousel-image-center {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    border-color: #334155 !important;
+  }
+  
+  .carousel-control-prev { left: 10px; }
+  .carousel-control-next { right: 10px; }
