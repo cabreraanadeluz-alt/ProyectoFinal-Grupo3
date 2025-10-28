@@ -243,8 +243,6 @@ main {
     margin-top: 100px;
   }
 }
-
-/* Tablets */
 @media (max-width: 768px) {
   nav a {
     font-size: 9px;
@@ -276,8 +274,6 @@ main {
     margin-top: 90px;
   }
 }
-
-/* Móviles */
 @media (max-width: 480px) {
   nav ul {
     flex-wrap: wrap;
