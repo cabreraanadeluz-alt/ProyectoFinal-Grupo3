@@ -21,152 +21,154 @@
 </head>
 
 <body class="eco-reviews">
-  <a href="#" class="logo">Eco<br>Reviews</a>
+    <div id="inicio"></div>
   <header>
-    <section id="inicio">
-      <div class="container-fluid px-4 py-3">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-            <div class="position-relative buscador-container">
-              <svg viewBox="0 0 24 24" class="position-absolute top-50 translate-middle-y ms-3 buscador-icon">
-                <path
-                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-              </svg>
-              <input type="text" class="form-control form-control-lg rounded-pill ps-5 buscador-input"
-                placeholder="Buscar...">
-            </div>
-          </div>
-        </div>
+  <div class="container-fluid px-4 py-1">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-auto">
+      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none rounded text-uppercase fw-bold logo-custom" 
+         style="width: 50px; height: 50px; background-color: #0c0c0c; border: 2px solid #334155; color: #F8FAFC; font-size: 12px; letter-spacing: 0.5px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);">
+        Eco
+      </a>
+    </div>
+    <div class="col">
+      <div class="position-relative buscador-container">
+        <svg viewBox="0 0 24 24" class="position-absolute top-50 translate-middle-y ms-3 buscador-icon">
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+        </svg>
+        <input 
+          type="text" 
+          class="form-control rounded-pill ps-5 buscador-input" 
+          placeholder="Buscar..."
+        >
       </div>
-    </section>
-    <nav>
-      <ul>
-        <li><a href="#inicio">INICIO</a></li>
-        <li><a href="#seccion-pelicula">PELICULAS</a></li>
-        <li><a href="#seccion-libro">LIBROS</a></li>
-        <li><a href="">LANZAMIENTOS</a></li>
-      </ul>
-    </nav>
-  </header>
+    </div>
+  </div>
+</div>
+</section>
+<nav>
+  <ul>
+    <li><a href="#inicio">INICIO</a></li>
+    <li><a href="#seccion-pelicula">PELICULAS</a></li>
+    <li><a href="#seccion-libro">LIBROS</a></li>
+    <li><a href="#lanzamientos">LANZAMIENTOS</a></li>
+  </ul>
+</nav>
+</header>
 
-  <main>
-    <section class="imgprincipal">
-      <div class="imgprincipal-grid">
-        <img src="img/Dune.jpg" alt="">
-        <img src="img/JuegodeTronos.jpg" alt="">
-        <img src="img/DonQuijote.jpeg" alt="">
-        <img src="img/Superman.jpg" alt="">
-        <img src="img/Frankenstein.jpg" alt="">
-        <img src="img/FreakyFriday.jpg" alt="">
-        <img src="img/LaOdisea.jpg" alt="">
-        <img src="img/Weapons.jpg" alt="">
-        <h2>Cada reseña es una voz, cada voto una conversacion, descubrí que esta marcado a otros y compartí tu propia
-          mirada
+<main>
+  <section class="imgprincipal">
+    <div class="imgprincipal-grid">
+      <img src="img/Dune.jpg" alt="">
+      <img src="img/JuegodeTronos.jpg" alt="">
+      <img src="img/DonQuijote.jpeg" alt="">
+      <img src="img/Superman.jpg" alt="">
+      <img src="img/LaOdisea.jpg" alt="">
+      <img src="img/Weapons.jpg" alt="">
+      <h2>Cada reseña es una voz, cada voto una conversacion, descubrí que esta marcado a otros y compartí tu propia mirada
       </div>
     </section>
   </main>
-  <section>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade rounded">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
-            <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
-            <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
-            <div class="d-flex flex-column align-items-center text-center carousel-center">
-              <img src="./img/Frankenstein.jpg" class="carousel-image-center rounded mb-3 border" alt="Frankenstein">
-              <h3 class="fs-5 mb-2" style="color: #E2E8F0;">Frankenstein</h3>
-              <p class="badge text-uppercase mb-2"
-                style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Terror</p>
-              <p class="small mb-2" style="color: #E2E8F0;">La historia del científico y su monstruo.</p>
-              <p class="small" style="color: #E2E8F0;">1818</p>
-            </div>
-            <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
-            <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
-          </div>
-        </div>
+<section id="lanzamientos">
+  <div class="text-center mb-4">
+    <h2 style="color: #E2E8F0;">Lanzamientos 2025</h2>
+  </div>
 
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
-            <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
-            <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
-            <div class="d-flex flex-column align-items-center text-center carousel-center">
-              <img src="./img/JuegodeTronos.jpg" class="carousel-image-center rounded mb-3 border"
-                alt="Juego de Tronos">
-              <h3 class="fs-5 mb-2" style="color: #E2E8F0;">Juego de Tronos</h3>
-              <p class="badge text-uppercase mb-2"
-                style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Fantasía</p>
-              <p class="small mb-2" style="color: #E2E8F0;">Una épica historia de poder y dragones.</p>
-              <p class="small" style="color: #E2E8F0;">2011</p>
-            </div>
-            <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
-            <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade rounded">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
+          <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
+          <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
+          <div class="d-flex flex-column align-items-center text-center carousel-center">
+            <img src="./img/Frankenstein.jpg" class="carousel-image-center rounded mb-3 border" alt="Frankenstein">
+            <h3 class="fs-5 mb-2" style="color: #E2E8F0;">Frankenstein</h3>
+            <p class="badge text-uppercase mb-2" style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Terror</p>
+            <p class="small mb-2" style="color: #E2E8F0;">La historia del científico y su monstruo.</p>
+            <p class="small" style="color: #E2E8F0;">1818</p>
           </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
-            <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
-            <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
-            <div class="d-flex flex-column align-items-center text-center carousel-center">
-              <img src="./img/ElPrincipito.jpg" class="carousel-image-center rounded mb-3 border" alt="El Principito">
-              <h3 class="fs-5 mb-2" style="color: #E2E8F0;">El Principito</h3>
-              <p class="badge text-uppercase mb-2"
-                style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Literatura Infantil</p>
-              <p class="small mb-2" style="color: #E2E8F0;">Un cuento poético de un pequeño príncipe.</p>
-              <p class="small" style="color: #E2E8F0;">1943</p>
-            </div>
-            <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
-            <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
-          </div>
+          <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
+          <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
         </div>
       </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+      
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
+          <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
+          <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+          <div class="d-flex flex-column align-items-center text-center carousel-center">
+            <img src="./img/JuegodeTronos.jpg" class="carousel-image-center rounded mb-3 border" alt="Juego de Tronos">
+            <h3 class="fs-5 mb-2" style="color: #E2E8F0;">Juego de Tronos</h3>
+            <p class="badge text-uppercase mb-2" style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Fantasía</p>
+            <p class="small mb-2" style="color: #E2E8F0;">Una épica historia de poder y dragones.</p>
+            <p class="small" style="color: #E2E8F0;">2011</p>
+          </div>
+          <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
+          <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
+          <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+          <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
+          <div class="d-flex flex-column align-items-center text-center carousel-center">
+            <img src="./img/ElPrincipito.jpg" class="carousel-image-center rounded mb-3 border" alt="El Principito">
+            <h3 class="fs-5 mb-2" style="color: #E2E8F0;">El Principito</h3>
+            <p class="badge text-uppercase mb-2" style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Literatura Infantil</p>
+            <p class="small mb-2" style="color: #E2E8F0;">Un cuento poético de un pequeño príncipe.</p>
+            <p class="small" style="color: #E2E8F0;">1943</p>
+          </div>
+          <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+          <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
+        </div>
+      </div>
     </div>
-  </section>
-  <section>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
-    <section class="top-libros">
-      <h1>Top 5 Libros</h1>
+<section class="top container my-5 p-4 rounded-3 shadow-lg">
+  <h1 class="mb-4 fw-bold text-light">Top 5 Libros</h1>
+  <ol class="list-unstyled row row-cols-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/ElPrincipito.jpg" class="card-img-top" alt="El Principito">
+        <h3 class="mt-2 text-center"><a href="#el-principito" class="text-light text-decoration-none">El Principito</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/Dracula.jpg" class="card-img-top" alt="Drácula">
+        <h3 class="mt-2 text-center"><a href="#dracula" class="text-light text-decoration-none">Drácula</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/DonQuijote.jpeg" class="card-img-top" alt="El Quijote de la Mancha">
+        <h3 class="mt-2 text-center"><a href="#don-quijote" class="text-light text-decoration-none">El Quijote de la Mancha</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/Frankenstein.jpg" class="card-img-top" alt="Frankenstein">
+        <h3 class="mt-2 text-center"><a href="#frankenstein" class="text-light text-decoration-none">Frankenstein</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/JuegodeTronos.jpg" class="card-img-top" alt="Juego de Tronos">
+        <h3 class="mt-2 text-center"><a href="#juego-de-tronos" class="text-light text-decoration-none">Juego de Tronos</a></h3>
+      </article>
+    </li>
+  </ol>
+</section>
 
-      <ol>
-        <li>
-          <article>
-            <img src="img/ElPrincipito.jpg" alt="Portada de El Principito">
-            <h3><a href="#el-principito">El Principito</a></h3>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="img/Dracula.jpg" alt="Portada de Drácula">
-            <h3><a href="#dracula">Drácula</a></h3>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="img/DonQuijote.jpeg" alt="Portada de El Quijote de la Mancha">
-            <h3><a href="#don-quijote">El Quijote de la Mancha</a></h3>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="img/Frankenstein.jpg" alt="Portada de Frankenstein">
-            <h3><a href="#frankenstein">Frankenstein</a></h3>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="img/JuegodeTronos.jpg" alt="Portada de Juego de Tronos">
-            <h3><a href="#juego-de-tronos">Juego de Tronos</a></h3>
-          </article>
-        </li>
-      </ol>
-    </section>
 
     <section>
       <h1>Top 10 Películas</h1>
@@ -1657,36 +1659,45 @@
       </form>
     </section>
 
-    <footer class="site-footer">
-      <div class="footer-left">
-        <ul>
+
+<footer class="custom-footer py-4 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+       
+      <div class="col-md-4 mb-3 mb-md-0">
+        <ul class="list-unstyled d-flex justify-content-center justify-content-md-start gap-3 mb-0">
           <li>
-            <a href="https://www.instagram.com/eco_revieww" target="_blank">
-              <i class="bi bi-instagram"></i> Instagram
+            <a href="https://www.instagram.com/eco_revieww" target="_blank" class="footer-link">
+              <i class="bi bi-instagram me-1"></i> Instagram
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/share/1Cs6Z6kbZu/" target="_blank">
-              <i class="bi bi-facebook"></i> Facebook
+            <a href="https://www.facebook.com/share/1Cs6Z6kbZu/" target="_blank" class="footer-link">
+              <i class="bi bi-facebook me-1"></i> Facebook
             </a>
           </li>
           <li>
-            <a href="https://x.com/eco_revieww" target="_blank">
-              <i class="bi bi-twitter-x"></i> X
+            <a href="https://x.com/eco_revieww" target="_blank" class="footer-link">
+              <i class="bi bi-twitter-x me-1"></i> X
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="footer-center">
-        <p>Contacto</p>
-        <p>©2025 Grupo 3</p>
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
+        <p class="footer-text mb-1 fw-semibold">Contacto</p>
+        <p class="footer-text mb-0">©2025 Grupo 3</p>
       </div>
 
-      <div class="footer-right mt-4">
-        <p><a href="mailto:participaeco@gmail.com"><i class="bi bi-envelope"></i> participaeco@gmail.com</a></p>
+      <div class="col-md-4 text-center text-md-end">
+        <a href="mailto:participaeco@gmail.com" class="footer-link">
+          <i class="bi bi-envelope me-1"></i> participaeco@gmail.com
+        </a>
       </div>
-    </footer>
+
+    </div>
+  </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
