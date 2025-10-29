@@ -742,16 +742,14 @@ textarea.form-control {
 
 
 
-
-
 .custom-footer {
   background-color: #0A0A0A; 
-  border-top: 1px solid #334155;
+  border-top: 1px solid #334155; 
   color: #E2E8F0; 
 }
 
 .footer-link {
-  color: #E2E8F0;
+  color: #E2E8F0; 
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s ease;
