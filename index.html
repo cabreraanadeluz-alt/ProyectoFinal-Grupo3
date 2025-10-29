@@ -1,671 +1,1705 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Grupo 3 ">
   <meta name="description" content="Proyecto: Eco">
   <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
   <link rel="icon" type="image" href="./img/" />
-  <link rel="stylesheet" href="index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Final-Grupo3</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
-    <a href="#" class="logo">Eco<br>Reviews</a>
+<body class="eco-reviews">
+    <div id="inicio"></div>
   <header>
-    <section id="inicio">
-      <div class="buscador">
-        <form>
-          <svg viewBox="0 0 24 24">
-            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-          </svg>
-          <input type="text" placeholder="Buscar...">
-        </form>
+  <div class="container-fluid px-4 py-1">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-auto">
+      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none rounded text-uppercase fw-bold logo-custom" 
+         style="width: 50px; height: 50px; background-color: #0c0c0c; border: 2px solid #334155; color: #F8FAFC; font-size: 12px; letter-spacing: 0.5px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);">
+        Eco
+      </a>
     </div>
-    </section>
-    </main>
-    <nav>
-      <ul>
-        <li><a href="#inicio">INICIO</a></li>
-        <li><a href="#seccion-pelicula">PELICULAS</a></li>
-        <li><a href="#seccion-libro">LIBROS</a></li>
-        <li><a href="">LANZAMIENTOS</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="col">
+      <div class="position-relative buscador-container">
+        <svg viewBox="0 0 24 24" class="position-absolute top-50 translate-middle-y ms-3 buscador-icon">
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+        </svg>
+        <input 
+          type="text" 
+          class="form-control rounded-pill ps-5 buscador-input" 
+          placeholder="Buscar..."
+        >
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<nav>
+  <ul>
+    <li><a href="#inicio">INICIO</a></li>
+    <li><a href="#seccion-pelicula">PELICULAS</a></li>
+    <li><a href="#seccion-libro">LIBROS</a></li>
+    <li><a href="#lanzamientos">LANZAMIENTOS</a></li>
+  </ul>
+</nav>
+</header>
 
- <main>
+<main>
   <section class="imgprincipal">
     <div class="imgprincipal-grid">
       <img src="img/Dune.jpg" alt="">
       <img src="img/JuegodeTronos.jpg" alt="">
       <img src="img/DonQuijote.jpeg" alt="">
       <img src="img/Superman.jpg" alt="">
-      <img src="img/Frankenstein.jpg" alt="">
-      <img src="img/FreakyFriday.jpg" alt="">
       <img src="img/LaOdisea.jpg" alt="">
       <img src="img/Weapons.jpg" alt="">
+      <h2>Cada reseña es una voz, cada voto una conversacion, descubrí que esta marcado a otros y compartí tu propia mirada
+      </div>
+    </section>
+  </main>
+<section id="lanzamientos">
+  <div class="text-center mb-4">
+    <h2 style="color: #E2E8F0;">Lanzamientos 2025</h2>
+  </div>
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade rounded">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
+          <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
+          <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
+          <div class="d-flex flex-column align-items-center text-center carousel-center">
+            <img src="./img/Frankenstein.jpg" class="carousel-image-center rounded mb-3 border" alt="Frankenstein">
+            <h3 class="fs-5 mb-2" style="color: #E2E8F0;">Frankenstein</h3>
+            <p class="badge text-uppercase mb-2" style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Terror</p>
+            <p class="small mb-2" style="color: #E2E8F0;">La historia del científico y su monstruo.</p>
+            <p class="small" style="color: #E2E8F0;">1818</p>
+          </div>
+          <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
+          <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
+          <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
+          <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+          <div class="d-flex flex-column align-items-center text-center carousel-center">
+            <img src="./img/JuegodeTronos.jpg" class="carousel-image-center rounded mb-3 border" alt="Juego de Tronos">
+            <h3 class="fs-5 mb-2" style="color: #E2E8F0;">Juego de Tronos</h3>
+            <p class="badge text-uppercase mb-2" style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Fantasía</p>
+            <p class="small mb-2" style="color: #E2E8F0;">Una épica historia de poder y dragones.</p>
+            <p class="small" style="color: #E2E8F0;">2011</p>
+          </div>
+          <img src="./img/ElPrincipito.jpg" class="carousel-image rounded opacity-75 border" alt="El Principito">
+          <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center gap-3 p-4" style="min-height: 480px;">
+          <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+          <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
+          <div class="d-flex flex-column align-items-center text-center carousel-center">
+            <img src="./img/ElPrincipito.jpg" class="carousel-image-center rounded mb-3 border" alt="El Principito">
+            <h3 class="fs-5 mb-2" style="color: #E2E8F0;">El Principito</h3>
+            <p class="badge text-uppercase mb-2" style="background-color: #2C2C2C; color: #E8EAFC; border: 1px solid #334155;">Literatura Infantil</p>
+            <p class="small mb-2" style="color: #E2E8F0;">Un cuento poético de un pequeño príncipe.</p>
+            <p class="small" style="color: #E2E8F0;">1943</p>
+          </div>
+          <img src="./img/Frankenstein.jpg" class="carousel-image rounded opacity-75 border" alt="Frankenstein">
+          <img src="./img/JuegodeTronos.jpg" class="carousel-image rounded opacity-75 border" alt="Juego de Tronos">
+        </div>
+      </div>
     </div>
-    <h2>Cada reseña es una voz, cada voto una conversacion,descubri que esta marcado a otros y comparti tu propia mirada
-  </section>
-</main>
-  
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
-  <section class="top-libros">
-    <h1>Top 5 Libros</h1>
-  
-    <ol>
-      <li>
-        <article>
-          <img src="img/ElPrincipito.jpg" alt="Portada de El Principito" width="200">
-          <h3><a href="#el-principito">El Principito</a></h3>
-        </article>
-      </li>
-      <li>
-        <article>
-          <img src="img/Dracula.jpg" alt="Portada de Drácula" width="200">
-          <h3><a href="#dracula">Drácula</a></h3>
-        </article>
-      </li>
-      <li>
-        <article>
-          <img src="img/DonQuijote.jpeg" alt="Portada de El Quijote de la Mancha" width="200">
-          <h3><a href="#don-quijote">El Quijote de la Mancha</a></h3>
-        </article>
-      </li>
-      <li>
-        <article>
-          <img src="img/Frankenstein.jpg" alt="Portada de Frankenstein" width="200">
-          <h3><a href="#frankenstein">Frankenstein</a></h3>
-        </article>
-      </li>
-      <li>
-        <article>
-          <img src="img/JuegodeTronos.jpg" alt="Portada de Juego de Tronos" width="200">
-          <h3><a href="#juego-de-tronos">Juego de Tronos</a></h3>
-        </article>
-      </li>
-    </ol>
-  </section>
-
-<section class="top-peliculas">
-  <h1>Top 10 Películas</h1>
-
-  <ol>
-    <li>
-      <article>
-        <img src="img/Superman.jpg" alt="Portada de Superman">
-        <h3><a href="#superman">Superman</a></h3>
+<section class="top container my-5 p-4 rounded-3 shadow-lg" style="max-width: 900px;">
+  <h1 class="mb-4 fw-bold text-light">Top 5 Libros</h1>
+  <ol class="list-unstyled row row-cols-5 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-2 g-sm-3">
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/ElPrincipito.jpg" class="card-img-top" alt="El Principito">
+        <h3 class="mt-2 text-center">
+          <a href="#el-principito" class="text-light text-decoration-none">El Principito</a>
+        </h3>
       </article>
     </li>
-
-    <li>
-      <article>
-        <img src="img/MisionImp.jpeg" alt="Portada de Mission Imposible">
-        <h3><a href="#mision-imposible">Mission Imposible</a></h3>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/Dracula.jpg" class="card-img-top" alt="Drácula">
+        <h3 class="mt-2 text-center">
+          <a href="#dracula" class="text-light text-decoration-none">Drácula</a>
+        </h3>
       </article>
     </li>
-
-    <li>
-      <article>
-        <img src="img/Httyd.jpg" alt="Portada de Entrenando A Tu Dragon">
-        <h3><a href="#como-entrenar">Entrenando A Tu Dragón</a></h3>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/DonQuijote.jpeg" class="card-img-top" alt="El Quijote de la Mancha">
+        <h3 class="mt-2 text-center">
+          <a href="#don-quijote" class="text-light text-decoration-none">El Quijote de la Mancha</a>
+        </h3>
       </article>
     </li>
-
-    <li>
-      <article>
-        <img src="img/Weapons.jpg" alt="Portada de Weapons">
-        <h3><a href="#weapons">Weapons</a></h3>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/Frankenstein.jpg" class="card-img-top" alt="Frankenstein">
+        <h3 class="mt-2 text-center">
+          <a href="#frankenstein" class="text-light text-decoration-none">Frankenstein</a>
+        </h3>
       </article>
     </li>
-
-    <li>
-      <article>
-        <img src="img/TheConjuringLR.jpg" alt="Portada de El Conjuro">
-        <h3><a href="#el-conjuro">El Conjuro</a></h3>
-      </article>
-    </li>
-
-    <li>
-      <article>
-        <img src="img/Dune.jpg" alt="Portada de Dune">
-        <h3><a href="#dune">Dune</a></h3>
-      </article>
-    </li>
-
-    <li>
-      <article>
-        <img src="img/TheTrumanShow.jpg" alt="Portada de The Truman Show">
-        <h3><a href="#truman-show">The Truman Show</a></h3>
-      </article>
-    </li>
-
-    <li>
-      <article>
-        <img src="img/DeadPoetsSociety.jpg" alt="Portada de Dead Poets Society">
-        <h3><a href="#dead-society">Dead Poets Society</a></h3>
-      </article>
-    </li>
-
-    <li>
-      <article>
-        <img src="img/FreakyFriday.jpg" alt="Portada de Freaky Friday">
-        <h3><a href="#freaky-friday">Freaky Friday</a></h3>
-      </article>
-    </li>
-
-    <li>
-      <article>
-        <img src="img/RuegaPorNosotros.jpeg" alt="Portada de Ruega Por Nosotros">
-        <h3><a href="#ruega-por-nos">Ruega Por Nosotros</a></h3>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/JuegodeTronos.jpg" class="card-img-top" alt="Juego de Tronos">
+        <h3 class="mt-2 text-center">
+          <a href="#juego-de-tronos" class="text-light text-decoration-none">Juego de Tronos</a>
+        </h3>
       </article>
     </li>
   </ol>
 </section>
 
 
-  <h1 id="seccion-pelicula">Películas</h1>
+  <section class="top container my-5 p-4 rounded-3 shadow-lg" style="max-width: 900px;">
+  <h1 class="mb-4 fw-bold text-light">Top 10 Películas</h1>
+  <ol class="list-unstyled row row-cols-5 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-2 g-sm-3">
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/Superman.jpg" class="card-img-top" alt="Superman">
+        <h3 class="mt-2 text-center"><a href="#superman" class="text-light text-decoration-none">Superman</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/MisionImp.jpeg" class="card-img-top" alt="Mission Imposible">
+        <h3 class="mt-2 text-center"><a href="#mision-imposible" class="text-light text-decoration-none">Mission Imposible</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/Httyd.jpg" class="card-img-top" alt="Entrenando a tu Dragón">
+        <h3 class="mt-2 text-center"><a href="#como-entrenar" class="text-light text-decoration-none">Entrenando A Tu Dragón</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/Weapons.jpg" class="card-img-top" alt="Weapons">
+        <h3 class="mt-2 text-center"><a href="#weapons" class="text-light text-decoration-none">Weapons</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/TheConjuringLR.jpg" class="card-img-top" alt="El Conjuro">
+        <h3 class="mt-2 text-center"><a href="#el-conjuro" class="text-light text-decoration-none">El Conjuro</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/Dune.jpg" class="card-img-top" alt="Dune">
+        <h3 class="mt-2 text-center"><a href="#dune" class="text-light text-decoration-none">Dune</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/TheTrumanShow.jpg" class="card-img-top" alt="The Truman Show">
+        <h3 class="mt-2 text-center"><a href="#truman-show" class="text-light text-decoration-none">The Truman Show</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/DeadPoetsSociety.jpg" class="card-img-top" alt="Dead Poets Society">
+        <h3 class="mt-2 text-center"><a href="#dead-society" class="text-light text-decoration-none">Dead Poets Society</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/FreakyFriday.jpg" class="card-img-top" alt="Freaky Friday">
+        <h3 class="mt-2 text-center"><a href="#freaky-friday" class="text-light text-decoration-none">Freaky Friday</a></h3>
+      </article>
+    </li>
+    <li class="col">
+      <article class="card h-100">
+        <img src="img/RuegaPorNosotros.jpeg" class="card-img-top" alt="Ruega Por Nosotros">
+        <h3 class="mt-2 text-center"><a href="#ruega-por-nos" class="text-light text-decoration-none">Ruega Por Nosotros</a></h3>
+      </article>
+    </li>
+  </ol>
+</section>
 
-  <h2>Drama</h2>
-  <section>
-    <article>
-      <img src="img/DeadPoetsSociety.jpg" width="200">
-      <p><strong> <a href="#dead-society"> Dead Poets Society</a></strong></p>
-    </article>
-    <article>
-      <img src="img/TheTrumanShow.jpg" width="200">
-      <p><strong><a href="#truman-show">The Truman Show</a></strong></p>
-    </article>
-  </section>
+    <section class="container my-5">
 
-  <h2>Ciencia Ficción</h2>
-  <section>
-    <article>
-      <img src="img/Dune.jpg" width="200">
-      <p><strong><a href="#dune">Dune</a></strong></p>
-    </article>
-    <article>
-      <img src="img/Superman.jpg" width="200">
-      <p><strong><a href="#superman">Superman</a></strong></p>
-    </article>
-  </section>
+      <h2 id="seccion-pelicula" class="mb-4 fw-bold titulo-seccion">Películas</h2>
 
-  <h2>Comedia</h2>
-  <section>
-    <article>
-      <img src="img/FreakyFriday.jpg" width="200">
-      <p><strong><a href="#freaky-friday">Viernes de locos</a></strong></p>
-    </article>
-  </section>
+      <h3 class="mb-3 fw-semibold titulo-categoria">Drama</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalDeadPoets">
+            <img src="img/DeadPoetsSociety.jpg" class="card-img-top" alt="Dead Poets Society">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Dead Poets Society</h6>
+            </div>
+          </div>
+        </div>
 
-  <h2>Animación</h2>
-  <section>
-    <article>
-      <img src="img/Httyd.jpg" width="200">
-      <p><strong><a href="#como-entrenar">Cómo entrenar a tu dragón</a></strong></p>
-    </article>
-  </section>
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalTrumanShow">
+            <img src="img/TheTrumanShow.jpg" class="card-img-top" alt="The Truman Show">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">The Truman show</h6>
+            </div>
+          </div>
+        </div>
 
-  <h2>Acción</h2>
-  <section>
-    <article>
-      <img src="img/MisionImp.jpeg" width="200">
-      <p><strong><a href="#mision-imposible">Misión imposible</a></strong></p>
-    </article>
-  </section>
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalForrestGump">
+            <img src="img/forrest.jpg" class="card-img-top" alt="Forrest Gump">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Forrest Gump</h6>
+            </div>
+          </div>
+        </div>
 
-  <h2>Terror</h2>
-  <section>
-    <article>
-      <img src="img/TheConjuringLR.jpg" width="200">
-      <p><strong><a href="#el-conjuro">El conjuro 4</a></strong></p>
-    </article>
-    <article>
-      <img src="img/RuegaPorNosotros.jpeg" width="200">
-      <p><strong><a href="#ruega-por-nos">Ruega por nosotros</a></strong></p>
-    </article>
-    <article>
-      <img src="img/Weapons.jpg" width="200">
-      <p><strong><a href="#weapons">Weapons</a></strong></p>
-    </article>
-  </section>
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalPersuitOfHappyness">
+            <img src="img/persuit.jpg" class="card-img-top" alt="The persuit of happyness">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">The persuit of happyness</h6>
+            </div>
+          </div>
+        </div>
 
-  <h1 id="seccion-libro">Libros</h1>
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalABeautifulMind">
+            <img src="img/mentebella.jpg" class="card-img-top" alt="A beautiful mind">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">A beautiful mind</h6>
+            </div>
+          </div>
+        </div>
 
-  <h2>Realismo Mágico</h2>
-  <section>
-    <article>
-      <img src="img/CienAños.jpg" width="200">
-      <p><strong><a href="#cien-años-soledad">Cien años de soledad</a></strong></p>
-    </article>
-  </section>
-  <h2>Novela</h2>
-  <section>
-    <article>
-      <img src="img/DonQuijote.jpeg" width="200">
-      <p><strong><a href="#don-quijote">Don Quijote de la Mancha</a></strong></p>
-    </article>
-    <article>
-      <img src="img/RayuelaOk.jpg" width="200">
-      <p><strong><a href="#rayuela">Rayuela</a></strong></p>
-    </article>
-    <article>
-      <img src="img/OrgulloyPrejuicio.jpg" width="200">
-      <p><strong><a href="#orgullo-prejuicio">Orgullo y Prejuicio</a></strong></p>
-    </article>
-    <article>
-      <img src="img/MatarRuiseñor.jpg" width="200">
-      <p><strong><a href="#matar-ruiseñor">Matar a un Ruiseñor</a></strong></p>
-    </article>
-  </section>
-  <h2>Fábula</h2>
-  <section>
-    <article>
-      <img src="img/ElPrincipito.jpg" width="200">
-      <p><strong><a href="#el-principito">El Principito</a></strong></p>
-    </article>
-  </section>
-  <h2>Épica</h2>
-  <section>
-    <article>
-      <img src="img/LaOdisea.jpg" width="200">
-      <p><strong><a href="#la-odisea">La Odisea</a></strong></p>
-    </article>
-  </section>
-  <h2>Terror</h2>
-  <section>
-    <article>
-      <img src="img/Dracula.jpg" width="200">
-      <p><strong><a href="#dracula">Dracula</a></strong></p>
-    </article>
-  </section>
-  <h2>Ciencia Ficción</h2>
-  <section>
-    <article>
-      <img src="img/Frankenstein.jpg" width="200">
-      <p><strong><a href="#frankenstein">Frankenstein</a></strong></p>
-    </article>
-  </section>
-  <h2>Fantasía</h2>
-  <section>
-    <article>
-      <img src="img/JuegodeTronos.jpg" width="200">
-      <p><strong><a href="#juego-de-tronos">Juego de Tronos</a></strong></p>
-    </article>
-  </section>
-
-  <section>
-    <h1> Información de libros </h1>
-    <article id="cien-años-soledad">
-      <img src="img/CienAños.jpg" width="200">
-      <h2>Cien Años de Soledad</h2>
-      <p><strong>Autor:</strong> Gabriel García Márquez</p>
-      <p><strong>Año:</strong> 1967</p>
-      <p><strong>Género:</strong> Realismo mágico</p>
-      <p>Historia de la familia Buendía en Macondo.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/370523.Cien_a_os_de_soledad">Según
-              Goodreads:</a></strong></p>
-        <p>“Una obra maestra del realismo mágico. García Márquez crea un universo lleno de belleza, tristeza y
-          eternidad.”</p>
-        <p><strong>4.12/5</strong></p>
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalTheShawshankRedemption">
+            <img src="img/shawshank.jpg" class="card-img-top" alt="The Shawshank redemption">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">The Shawshank redemption</h6>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <article id="la-odisea">
-      <img src="img/LaOdisea.jpg" width="200">
-      <h2>La Odisea</h2>
-      <p><strong>Autor:</strong> Homero</p>
-      <p><strong>Año:</strong> -800</p>
-      <p><strong>Género:</strong> Épica</p>
-      <p>El viaje de Ulises para regresar a Ítaca.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/95534.La_Odisea?ref=nav_sb_ss_1_9">Según
-              Goodreads:</a></strong></p>
-        <p>“Una epopeya clásica sobre el viaje, la astucia y el destino. Fundamental en la literatura occidental.”</p>
-        <p><strong>3.75/5</strong></p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Ciencia Ficción</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalDune">
+            <img src="img/Dune.jpg" class="card-img-top" alt="Dune">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Dune</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalSuperman">
+            <img src="img/Superman.jpg" class="card-img-top" alt="Superman">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Superman</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalInterestellar">
+            <img src="img/interstellar.jpg" class="card-img-top" alt="Interestellar">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Interestellar</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalBladeRunner">
+            <img src="img/bladeRunner.jpg" class="card-img-top" alt="Blade runner">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Blade runner</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalInception">
+            <img src="img/inception.jpg" class="card-img-top" alt="Inception">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Inception</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalMatrix">
+            <img src="img/matrix.jpg" class="card-img-top" alt="Matrix">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Matrix</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="dracula">
-      <img src="img/Dracula.jpg" width="200">
-      <h2>Drácula</h2>
-      <p><strong>Autor:</strong> Bram Stoker</p>
-      <p><strong>Año:</strong> 1897</p>
-      <p><strong>Género:</strong> Terror</p>
-      <p>El famoso vampiro que aterroriza Londres.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/17245.Dracula?ref=nav_sb_ss_1_7">Según
-              Goodreads:</a></strong></p>
-        <p>“Una historia gótica intensa, llena de atmósfera y misterio. El clásico que definió el mito moderno del
-          vampiro.”</p>
-        <p><strong>3.99/5</strong></p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Comedia</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalFrakierFriday">
+            <img src="img/freakierFrifay.jpg" class="card-img-top" alt="Freakier friday">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Freakier friday</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalMeanGirls">
+            <img src="img/meanGirls.jpg" class="card-img-top" alt="Mean girls">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Mean girls</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modelTheIntern">
+            <img src="img/theIntern.jpg" class="card-img-top" alt="The intern">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">The intern</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalTheProposal">
+            <img src="img/theProposal.jpg" class="card-img-top" alt="The proposal">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">The proposal</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modal10ThingsIHateAboutYou">
+            <img src="img/10cosas.jpg" class="card-img-top" alt="10 things i hate about you">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white"> 10 things i hate about you </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalSuperbad">
+            <img src="img/superbad.jpg" class="card-img-top" alt="Superbad">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Superbad</h6>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <article id="don-quijote">
-      <img src="img/DonQuijote.jpeg" width="200">
-      <h2>Don Quijote de la Mancha</h2>
-      <p><strong>Autor:</strong> Miguel de Cervantes</p>
-      <p><strong>Año:</strong> 1605</p>
-      <p><strong>Género:</strong> Novela</p>
-      <p>Las aventuras de Don Quijote y Sancho Panza.</p>
-      <div>
-        <p><strong><a
-              href="https://www.goodreads.com/book/show/69618.Don_Quijote_de_la_Mancha_I?ref=nav_sb_ss_2_10">Según
-              Goodreads:</a></strong></p>
-        <p>“Divertido, profundo y filosófico. Una crítica brillante a la locura y la nobleza.”</p>
-        <p><strong>3.87/5</strong></p>
+
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Animación</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalComoEntrenarATuDragon">
+            <img src="img/Httyd.jpg" class="card-img-top" alt="Cómo entrenar a tu dragón">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Cómo entrenar a tu dragón</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalMalefica">
+            <img src="img/malefica.jpg" class="card-img-top" alt="Malefica">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Maléfica</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalElLibroDeLaSelva">
+            <img src="img/jungleBook.jpg" class="card-img-top" alt="El libro de la selva">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white"> El libro de la selva </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalAliceInWonderland">
+            <img src="img/aliceWonderland.jpg" class="card-img-top" alt="Alicia en el país de las maravillas">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Alicia en el país de las maravillas</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalMulan">
+            <img src="img/mulan.jpg" class="card-img-top" alt="Mulán">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Mulán</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalCenicienta">
+            <img src="img/cenicienta.jpg" class="card-img-top" alt="Cenicienta">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Cenicienta</h6>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <article id="el-principito">
-      <img src="img/ElPrincipito.jpg" width="200">
-      <h2>El Principito</h2>
-      <p><strong>Autor:</strong> Antoine de Saint-Exupéry</p>
-      <p><strong>Año:</strong> 1943</p>
-      <p><strong>Género:</strong> Fábula</p>
-      <p>Un cuento poético y filosófico sobre la vida.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/866618.El_principito?ref=nav_sb_ss_1_11">Según
-              Goodreads:</a></strong></p>
-        <p>“Una historia tierna y filosófica que toca el corazón. Ideal para todas las edades.”</p>
-        <p><strong>4.31/5</strong></p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Acción</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm " role="button" data-bs-toggle="modal"
+            data-bs-target="#modalMisionImposible">
+            <img src="img/MisionImp.jpeg" class="card-img-top" alt="Misión imposible">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Misión imposible</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalJohnWick">
+            <img src="img/johnWick.jpg" class="card-img-top" alt="Jonh Wick">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">John Wick</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalGladiador">
+            <img src="img/gladiador.jpg" class="card-img-top" alt="Gladiador">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Gladiador</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalTheDarkKnight">
+            <img src="img/darkKnight.jpg" class="card-img-top" alt="The dark knight">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">The dark knight</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalKillBill">
+            <img src="img/killBill.jpg" class="card-img-top" alt="Kill Bill: vol 1">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Kill Bill: vol 1</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalAtomicBlonde">
+            <img src="img/atomicBlonde.jpg" class="card-img-top" alt="Atomic blonde">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Atomic blonde</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="frankenstein">
-      <img src="img/Frankenstein.jpg" width="200">
-      <h2>Frankenstein</h2>
-      <p><strong>Autor:</strong> Mary Shelley</p>
-      <p><strong>Año:</strong> 1818</p>
-      <p><strong>Género:</strong> Ciencia ficción</p>
-      <p>Un científico crea un monstruo con partes humanas.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/35031085-frankenstein?ref=nav_sb_ss_1_12">Según
-              Goodreads:</a></strong></p>
-        <p>“Más que una historia de terror, es una reflexión sobre la soledad, la creación y la humanidad.”</p>
-        <p><strong>3.84/5</strong></p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Terror</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalElCojuro">
+            <img src="img/TheConjuringLR.jpg" class="card-img-top" alt="El conjuro 4">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El conjuro 4</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalRuegaPorNosotros">
+            <img src="img/RuegaPorNosotros.jpeg" class="card-img-top" alt="Ruega por nosotros">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Ruega por nosotros</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalWeapons">
+            <img src="img/Weapons.jpg" class="card-img-top" alt="Weapons">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Weapons</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalHereditary">
+            <img src="img/hereditary.jpg" class="card-img-top" alt="Hereditary">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Hereditary</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalIt">
+            <img src="img/it.jpg" class="card-img-top" alt="It">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">It</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalInsidious">
+            <img src="img/insidious.jpg" class="card-img-top" alt="La noche del demonio">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">La noche del demonio</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="juego-de-tronos">
-      <img src="img/JuegodeTronos.jpg" width="200">
-      <h2>Juego de Tronos</h2>
-      <p><strong>Autor:</strong> George R. R. Martin</p>
-      <p><strong>Año:</strong> 1996</p>
-      <p><strong>Género:</strong> Fantasía</p>
-      <p>Luchas por el poder en Poniente.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/1453612.Juego_de_tronos?ref=nav_sb_ss_1_15">Según
-              Goodreads:</a></strong></p>
-        <p>“Intriga, traición y personajes inolvidables. Una fantasía adulta que redefine el género.”</p>
-        <p><strong>4.45/5</strong></p>
+      <div class="modal fade" id="modalDeadPoets" tabindex="-1" aria-labelledby="modalDeadPoetsLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalDeadPoetsLabel">La Sociedad de los Poetas Muertos</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <img src="img/DeadPoetsSociety.jpg" class="img-fluid rounded" alt="Dead Poets Society">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">John Keating, un profesor de literatura poco convencional, llega a una escuela
+                    preparatoria
+                    tradicional para chicos y desafía a sus alumnos a pensar por sí mismos, romper con las normas y
+                    “aprovechar el día”. A través de la poesía y el pensamiento crítico, inspira a jóvenes como Neil y
+                    Todd
+                    a
+                    descubrir sus pasiones, aunque sus enseñanzas también provocan tensiones con la autoridad y
+                    consecuencias
+                    profundas.</p>
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Director: Peter Weir</li>
+                    <li class="list-group-item p-2">Año: 1989</li>
+                    <li class="list-group-item p-2">Género: Drama</li>
+                    <li class="list-group-item p-2">Reparto: Robin Williams, Robert Sean Leonard, Ethan Hawke,
+                      Josh Charles, Gale Hansen</li>
+                    <li class="list-group-item p-2">Duración: 2h 8min</li>
+                    <li class="list-group-item p-2">Calificación: 85% / 92%</li>
+                  </ul>
+
+
+                  <p class="fst-italic" style="color: #E2E8F0;">"Actuaciones conmovedoras del elenco joven y una
+                    interpretación verdaderamente inspiradora de Robin
+                    Williams."</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.rottentomatoes.com/m/dead_poets_society" class="btn btn-primary" target="_blank">Ver
+                en
+                Rotten Tomatoes</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <article id="matar-ruiseñor">
-      <img src="img/MatarRuiseñor.jpg" width="200">
-      <h2>Matar a un Ruiseñor</h2>
-      <p><strong>Autor:</strong> Harper Lee</p>
-      <p><strong>Año:</strong> 1960</p>
-      <p><strong>Género:</strong> Drama</p>
-      <p>Un abogado defiende a un hombre negro acusado injustamente.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/23802330-matar-a-un-ruise-or?ref=nav_sb_ss_1_19">Según
-              Goodreads:</a></strong></p>
-        <p>“Una historia conmovedora sobre justicia, racismo y crecimiento. Narrada con ternura y fuerza.”</p>
-        <p><strong>4.28/5</strong></p>
+      <div class="modal fade" id="modalTrumanShow" tabindex="-1" aria-labelledby="modalTrumanShowLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalTrumanShowLabel">The Truman show</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <img src="img/TheTrumanShow.jpg" class="img-fluid rounded" alt="The Truman show">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">Truman Burbank vive una vida aparentemente perfecta en una ciudad idílica. Sin
+                    saberlo, su
+                    existencia entera es parte de un gigantesco set de televisión, y cada persona en su entorno es un
+                    actor.
+                    A
+                    medida que comienza a notar inconsistencias en su mundo, Truman se embarca en una búsqueda por la
+                    verdad,
+                    enfrentando el dilema de vivir en una mentira cómoda o descubrir la realidad.</p>
+
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Director: Peter Weir</li>
+                    <li class="list-group-item p-2">Año: 1988</li>
+                    <li class="list-group-item p-2">Género: Drama / Ciencia ficción / Comedia satírica</li>
+                    <li class="list-group-item p-2">Reparto: Jim Carrey, Laura Linney, Ed Harris, Natascha McElhone,
+                      Noah
+                      Emmerich</li>
+                    <li class="list-group-item p-2">Duración: 1h 43min</li>
+                    <li class="list-group-item p-2">Calificación: 94% / 89%</li>
+                  </ul>
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“Una comedia profética de ideas que golpea demasiado
+                    cerca de casa en nuestros tiempos obsesionados con
+                    la televisión y la celebridad.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.rottentomatoes.com/m/truman_show" class="btn btn-primary" target="_blank">Ver en
+                Rotten Tomatoes</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <article id="orgullo-prejuicio">
-      <img src="img/OrgulloyPrejuicio.jpg" width="200">
-      <h2>Orgullo y Prejuicio</h2>
-      <p><strong>Autor:</strong> Jane Austen</p>
-      <p><strong>Año:</strong> 1813</p>
-      <p><strong>Género:</strong> Romance</p>
-      <p>Historia de amor entre Elizabeth Bennet y Darcy.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/110815.Orgullo_y_prejuicio?ref=nav_sb_ss_1_19">Según
-              Goodreads:</a></strong></p>
-        <p>“Romántica, ingeniosa y crítica. Jane Austen brilla con su mirada aguda sobre la sociedad.”</p>
-        <p><strong>4.29/5</strong></p>
+      <div class="modal fade" id="modalForrestGump" tabindex="-1" aria-labelledby="modalForrestGumpLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalForrestGumpLabel">Forrest Gump</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <img src="img/forrest.jpg" class="img-fluid rounded" alt="Forrest Gump">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">Forrest Gump, un hombre con discapacidad intelectual pero gran corazón, vive una vida
+                    extraordinaria gracias al apoyo de su madre. Desde jugar fútbol americano universitario, luchar en
+                    Vietnam, hasta convertirse en empresario, su optimismo inspira a todos. Sin embargo, su mayor
+                    desafío es
+                    conquistar a Jenny, su amor de infancia, marcada por una vida difícil.
+                  </p>
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Director: Robert Zemeckis</li>
+                    <li class="list-group-item p-2">Año: 1994</li>
+                    <li class="list-group-item p-2">Género: Drama / Romance</li>
+                    <li class="list-group-item p-2">Reparto: Robin Wright, Gary Sinise, Mykelti Williamson, Sally Field
+                    </li>
+                    <li class="list-group-item p-2">Duración: 2h 22min</li>
+                    <li class="list-group-item p-2">Calificación: 75% tomátometro / 95% audiencia </li>
+                  </ul>
+
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“La interpretación rigurosamente sincera de Tom Hanks
+                    mantiene a Forrest Gump auténtico incluso cuando
+                    trivializa la historia estadounidense, convirtiéndolo en una odisea caprichosa de sabiduría
+                    debatible
+                    pero con un corazón innegable.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.rottentomatoes.com/m/forrest_gump" class="btn btn-primary" target="_blank">Ver en
+                Rotten Tomatoes</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <article id="rayuela">
-      <img src="img/RayuelaOk.jpg" width="200">
-      <h2>Rayuela</h2>
-      <p><strong>Autor:</strong> Julio Cortázar</p>
-      <p><strong>Año:</strong> 1963</p>
-      <p><strong>Género:</strong> Novela experimental</p>
-      <p>Novela que se puede leer en múltiples órdenes.</p>
-      <div>
-        <p><strong><a href="https://www.goodreads.com/book/show/46171.Rayuela?ref=nav_sb_ss_1_7">Según
-              Goodreads:</a></strong></p>
-        <p>“Experimental y poético. Cortázar juega con la estructura y el lenguaje para desafiar al lector.”</p>
-        <p><strong>4.01/5</strong></p>
+      <div class="modal fade" id="modalPersuitOfHappyness" tabindex="-1" aria-labelledby="modalPersuitOfHappynessLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalPersuitOfHappynessLabel">The persuit of happyness </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <img src="img/persuit.jpg" class="img-fluid rounded" alt="The persuit of happyness">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">Chris Gardner, un vendedor en apuros, lucha por mantener a su hijo pequeño mientras
+                    enfrenta la pérdida de su hogar y la separación de su esposa. A pesar de las dificultades extremas,
+                    incluyendo dormir en baños públicos y competir por un puesto en una firma de corredores de bolsa,
+                    Chris
+                    nunca pierde la esperanza. Su amor incondicional por su hijo y su determinación lo impulsan a
+                    superar
+                    cada obstáculo en busca de una vida mejor.
+                  </p>
+
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Director: Gabriele Muccino</li>
+                    <li class="list-group-item p-2">Año: 2000</li>
+                    <li class="list-group-item p-2">Género: Drama biografico</li>
+                    <li class="list-group-item p-2">Reparto: Will Smith, Jaden Smith, Thandiwe Newton, Brian Howe, James
+                      Karen
+                    </li>
+                    <li class="list-group-item p-2">Duración: 1h 57min</li>
+                    <li class="list-group-item p-2">Calificación: 67% tomátometro / 87% audiencia </li>
+                  </ul>
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“La actuación sincera de Will Smith eleva The Pursuit of
+                    Happyness por encima del melodrama,
+                    convirtiéndola en una historia inspiradora sobre la resiliencia y el amor paternal.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.rottentomatoes.com/m/pursuit_of_happyness" class="btn btn-primary"
+                target="_blank">Ver en
+                Rotten Tomatoes</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
-  </section>
 
-  <section>
-    <h1>Información de peliculas</h1>
-    <article id="dead-society">
-      <img src="img/DeadPoetsSociety.jpg" width="200">
-      <h2>La Sociedad de los Poetas Muertos</h2>
-      <p><strong>Director:</strong> Peter Weir</p>
-      <p><strong>Año:</strong> 1989</p>
-      <p><strong>Género:</strong> Drama</p>
-      <p><strong>Duración:</strong> 2h 8min</p>
-      <p><strong>Reparto:</strong> Robin Williams, Ethan Hawke, Robert Sean Leonard</p>
-      <p>Un profesor inspira a sus alumnos a pensar por sí mismos y a vivir con pasión.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/dead_poets_society">Según Rotten Tomatoes:</a></strong></p>
-        <p>“Actuaciones conmovedoras del elenco joven y una interpretación verdaderamente inspiradora de Robin Williams
-          le otorgan a este drama escolar los más altos honores.”</p>
-        <p><strong>85%</strong> Tomatometro – <strong>92%</strong> audiencia</p>
+      <div class="modal fade" id="modalABeautifulMind" tabindex="-1" aria-labelledby="modalABeautifulMindLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalABeautifulMindLabel">A beautiful mind</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <img src="img/mentebella.jpg" class="img-fluid rounded" alt="A beautiful mind">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">John Forbes Nash Jr., un brillante matemático, realiza un descubrimiento
+                    revolucionario que
+                    lo pone al borde del reconocimiento internacional. Sin embargo, su vida da un giro cuando comienza a
+                    luchar contra la esquizofrenia. La película retrata su doloroso camino hacia la recuperación,
+                    acompañado
+                    por el amor incondicional de su esposa Alicia.
+                  </p>
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Director: Ron Howard</li>
+                    <li class="list-group-item p-2">Año: 2001</li>
+                    <li class="list-group-item p-2">Género: Drama / Biografia</li>
+                    <li class="list-group-item p-2">Reparto: Russell Crowe, Ed Harris, Jennifer Connelly, Paul Bettany,
+                      Adam
+                      Goldberg
+                    </li>
+                    <li class="list-group-item p-2">Duración: 2h 15min</li>
+                    <li class="list-group-item p-2">Calificación: 67% tomátometro / 87% audiencia </li>
+                  </ul>
+
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“Una película conmovedora y emocionalmente rica sobre el
+                    genio y la enfermedad mental, donde la
+                    brillantez y el delirio se entrelazan trágicamente. Russell Crowe ofrece una actuación conmovedora,
+                    acompañado por Jennifer Connelly en un retrato poderoso del amor y la devoción.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.rottentomatoes.com/m/beautiful_mind" class="btn btn-primary" target="_blank">Ver en
+                Rotten Tomatoes</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <article id="dune">
-      <img src="img/Dune.jpg" width="200">
-      <h2>Dune</h2>
-      <p><strong>Director:</strong> Denis Villeneuve</p>
-      <p><strong>Año:</strong> 2021</p>
-      <p><strong>Género:</strong> Ciencia ficción / Aventura / Drama</p>
-      <p><strong>Duración:</strong> 2h 35min</p>
-      <p><strong>Reparto:</strong> Timothée Chalamet, Rebecca Ferguson, Oscar Isaac, Zendaya</p>
-      <p>Paul Atreides, un joven brillante, debe viajar al planeta Arrakis para asegurar el futuro de su familia y su
-        pueblo, enfrentando fuerzas oscuras que luchan por el control de un recurso vital.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/dune_2021">Según Rotten Tomatoes:</a></strong></p>
-        <p>“Dune ocasionalmente lucha con su material de origen, pero esos problemas son eclipsados por el alcance y la
-          ambición de esta adaptación visualmente impresionante.”</p>
-        <p><strong>83%</strong> Tomatometro – <strong>90%</strong> audiencia</p>
+      <div class="modal fade" id="modalTheShawshankRedemption" tabindex="-1"
+        aria-labelledby="modalTheShawshankRedemptionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalTheShawshankRedemptionabel">The Shawshank redemption</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <img src="img/shawshank.jpg" class="img-fluid rounded" alt="The Shawshank redemption">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">Andy Dufresne, condenado injustamente por el asesinato de su esposa, llega a la
+                    prisión de
+                    Shawshank. A lo largo de dos décadas, forma una amistad profunda con Red, enfrenta la brutalidad del
+                    sistema y encuentra formas de resistir espiritualmente.
+                  </p>
+
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Director: Frank Darabont</li>
+                    <li class="list-group-item p-2">Año: 1994</li>
+                    <li class="list-group-item p-2">Género: Drama / Carcelario</li>
+                    <li class="list-group-item p-2">Reparto: Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler,
+                      Clancy
+                      Brown
+                    </li>
+                    <li class="list-group-item p-2">Duración: 2h 22min</li>
+                    <li class="list-group-item p-2">Calificación: 89% tomátometro / 98% audiencia </li>
+                  </ul>
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“Steeped in old-fashioned storytelling y con una
+                    humanidad eterna gracias a Morgan Freeman y Tim Robbins,
+                    The Shawshank Redemption narra las dificultades del encarcelamiento con una honestidad que logra su
+                    elevación emocional.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.rottentomatoes.com/m/shawshank_redemption" class="btn btn-primary"
+                target="_blank">Ver en
+                Rotten Tomatoes</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
+    </section>
 
-    <article id="freaky-friday">
-      <img src="img/FreakyFriday.jpg" width="200">
-      <h2>Freakier Friday</h2>
-      <p><strong>Director:</strong> Nisha Ganatra</p>
-      <p><strong>Año:</strong> 2025</p>
-      <p><strong>Género:</strong> Comedia / Fantasía / Familiar</p>
-      <p><strong>Duración:</strong> 1h 50min</p>
-      <p><strong>Reparto:</strong> Jamie Lee Curtis, Lindsay Lohan, Julia Butters, Sophia Hammons</p>
-      <p>Tess y Anna descubren que los rayos pueden caer dos veces, mientras enfrentan los desafíos de unir dos
-        familias.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/freakier_friday" target="_blank">Según Rotten
-              Tomatoes:</a></strong></p>
-        <p>“No reinventa la historia original, pero ofrece una experiencia divertida y nostálgica. Curtis y Lohan
-          vuelven con química y encanto.”</p>
-        <p><strong>74%</strong> Tomatometro – <strong>92%</strong> audiencia</p>
+    <section class="container my-5">
+      <h2 id="seccion-libro" class="mb-4 fw-bold titulo-seccion">Libros</h2>
+
+      <h3 class="mb-3 fw-semibold titulo-categoria">Realismo Mágico</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalCienAñosDeSoledad">
+            <img src="img/CienAños.jpg" class="card-img-top" alt="Cien años de soledad">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Cien años de soledad</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalLaCasaDeLosEspiritus">
+            <img src="img/casaEspiritus.jpg" class="card-img-top" alt="La casa de los espiritus">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">La casa de los espiritus</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalPedroParamo">
+            <img src="img/pedroParamo.jpg" class="card-img-top" alt="Pedro Páramo">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Pedro Páramo</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalElOtoñoDelPatriarca">
+            <img src="img/otoñoPatriarca.jpg" class="card-img-top" alt="El otoño del patriarca">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">EL otroño del patriarca</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalLosPasosPerdidos">
+            <img src="img/pasosPerdidos.jpg" class="card-img-top" alt="Los pasos perdidos">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Los pasos perdidos</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalComoAguaParaChocolate">
+            <img src="img/comoAgua.jpg" class="card-img-top" alt="Como agua para chocolate">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Como agua para chocolate</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="superman">
-      <img src="img/Superman.jpg" width="200">
-      <h2>Superman (2025)</h2>
-      <p><strong>Director:</strong> James Gunn</p>
-      <p><strong>Año:</strong> 2025</p>
-      <p><strong>Género:</strong> Acción / Aventura / Ciencia ficción / Fantasía</p>
-      <p><strong>Duración:</strong> 2h 9min</p>
-      <p><strong>Reparto:</strong> David Corenswet, Rachel Brosnahan, Nicholas Hoult, Edi Gathegi, Anthony Carrigan</p>
-      <p>Superman se ve envuelto en conflictos locales e internacionales, mientras Lex Luthor aprovecha para intentar
-        eliminarlo. Lois Lane y Krypto, su fiel compañero, podrían ser clave para salvarlo.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/superman_2025">Según Rotten Tomatoes:</a></strong></p>
-        <p>“Este Superman vuela alto como un Hombre del Mañana, con un corazón vibrante y una visión contemporánea.”</p>
-        <p><strong>83%</strong> Tomatometro – <strong>90%</strong> audiencia</p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Novela</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalDonQuijoteDeLaMancha">
+            <img src="img/DonQuijote.jpeg" class="card-img-top" alt="Don Quijote de la Mancha">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Don Quijote de la Mancha</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalRayuela">
+            <img src="img/RayuelaOk.jpg" class="card-img-top" alt="Rayuela">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Rayuela</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalOrgulloYPrejuicio">
+            <img src="img/OrgulloyPrejuicio.jpg" class="card-img-top" alt="Orgullo y Prejuicio">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Orgullo y prejuicio</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalMatarAUnRiseñor">
+            <img src="img/MatarRuiseñor.jpg" class="card-img-top" alt="Matar a un Ruiseñor">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Matar a un Ruiseñor</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalCrimenYCastigo">
+            <img src="img/crimenCastigo.jpg" class="card-img-top" alt="Crimen y castigo">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Crimen y castigo</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalMadameBovary">
+            <img src="img/madameBivary.jpg" class="card-img-top" alt="Madame Bovary">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Madame Bovary</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="el-conjuro">
-      <img src="img/TheConjuringLR.jpg" width="200">
-      <h2>The Conjuring: Last Rites</h2>
-      <p><strong>Director:</strong> Michael Chaves</p>
-      <p><strong>Año:</strong> 2025</p>
-      <p><strong>Género:</strong> Terror</p>
-      <p><strong>Duración:</strong> —</p>
-      <p><strong>Reparto:</strong> Vera Farmiga, Patrick Wilson</p>
-      <p>La última entrega de los investigadores paranormales Ed y Lorraine Warren.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/the_conjuring_last_rites">Según Rotten
-              Tomatoes:</a></strong></p>
-        <p>“Una despedida escalofriante para los Warren. Aunque no alcanza el terror de entregas anteriores, mantiene la
-          atmósfera inquietante que caracteriza a la saga.”</p>
-        <p><strong>59%</strong> Tomatometro – <strong>78%</strong> audiencia</p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Fábula</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalElPrincpito">
+            <img src="img/ElPrincipito.jpg" class="card-img-top" alt="El Principito">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El Principito</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalRebelionEnLaGranja">
+            <img src="img/rebelionGranja.jpg" class="card-img-top" alt="Rebelión en la granja">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Rebelión en la granja </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalJonathanLivingstonSeagull">
+            <img src="img/jonathan.jpg" class="card-img-top" alt="Jonathan Livingston Seagull">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Jonathan Livingston Seagull</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalElAlquimista">
+            <img src="img/elAlquimista.jpg" class="card-img-top" alt="El Alquimista">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El Alquimista</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalLaHistoriaInterminable">
+            <img src="img/historiaInterminable.jpg" class="card-img-top" alt="La historia interminable">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">La historia interminable</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalElOsoQueNoLoEra">
+            <img src="img/osoQueNo.jpg" class="card-img-top" alt="El oso que no lo era">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El oso que no lo era</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="truman-show">
-      <img src="img/TheTrumanShow.jpg" width="200">
-      <h2>The Truman Show</h2>
-      <p><strong>Director:</strong> Peter Weir</p>
-      <p><strong>Año:</strong> 1998</p>
-      <p><strong>Género:</strong> Drama / Ciencia ficción</p>
-      <p><strong>Duración:</strong> 1h 43min</p>
-      <p><strong>Reparto:</strong> Jim Carrey, Laura Linney, Ed Harris</p>
-      <p>Un hombre descubre que su vida entera ha sido un programa de televisión, transmitido sin su conocimiento.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/truman_show">Según Rotten Tomatoes:</a></strong></p>
-        <p>“Una sátira inteligente y conmovedora sobre la vigilancia y la autenticidad. Jim Carrey sorprende con una
-          actuación profunda y contenida.”</p>
-        <p><strong>95%</strong> Tomatometro – <strong>89%</strong> audiencia</p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Épica</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalLaOdisea">
+            <img src="img/LaOdisea.jpg" class="card-img-top" alt="La Odisea">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">La Odisea</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalLaIliada">
+            <img src="img/laIliada.jpg" class="card-img-top" alt="La Iliada">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">La Iliada</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalBeowulf">
+            <img src="img/beowulf.jpg" class="card-img-top" alt="Beowulf">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Beowulf</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalLaEneida">
+            <img src="img/laEneida.jpg" class="card-img-top" alt="La Eneida">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">La Eneida</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalElCantarDelMioCid">
+            <img src="img/cantarMio.jpg" class="card-img-top" alt="El cantar del Mio Cid">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El cantar del mio Cid</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal"
+            data-bs-target="#modalLaEpopeyaDeGilgamesh">
+            <img src="img/gilgamesh.jpg" class="card-img-top" alt="La epopeya de Gilgamesh">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white"> La epopeya de Gilgamesh</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="weapons">
-      <img src="img/Weapons.jpg" width="200">
-      <h2>Weapons</h2>
-      <p><strong>Director:</strong> Zach Cregger</p>
-      <p><strong>Año:</strong> 2025</p>
-      <p><strong>Género:</strong> Terror</p>
-      <p><strong>Duración:</strong> 2h</p>
-      <p><strong>Reparto:</strong> Pedro Pascal, Renate Reinsve, Austin Abrams</p>
-      <p>Un relato coral donde distintos personajes se ven unidos por un suceso misterioso y violento.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/weapons">Según Rotten Tomatoes:</a></strong></p>
-        <p>“Zach Cregger teje una historia de misterio aterradora y emocionante en Weapons, un triunfo que lo consolida
-          como maestro del horror.”</p>
-        <p><strong>94%</strong> Tomatometro – <strong>85%</strong> audiencia</p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Terror</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalDracula">
+            <img src="img/Dracula.jpg" class="card-img-top" alt="Drácula">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Drácula</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalTheShining">
+            <img src="img/theShining.jpg" class="card-img-top" alt="El resplandor">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El resplandor</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button" data-bs-toggle="modal" data-bs-target="#modalCuentosMAcabros">
+            <img src="img/cuentos macabros.jpg" class="card-img-top" alt="Cuentos macabros">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Cuentos macabros</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/Frankenstein.jpg" class="card-img-top" alt="Frankenstein">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Frankenstein</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/dejameEntrar.jpg" class="card-img-top" alt="Déjame entrar">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Déjame entrar</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/elRitual.jpg" class="card-img-top" alt="El Ritual">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El ritual</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="ruega-por-nos">
-      <img src="img/RuegaPorNosotros.jpeg" width="200">
-      <h2>The Unholy</h2>
-      <p><strong>Director:</strong> Evan Spiliotopoulos</p>
-      <p><strong>Año:</strong> 2021</p>
-      <p><strong>Género:</strong> Terror</p>
-      <p><strong>Duración:</strong> 1h 39min</p>
-      <p><strong>Reparto:</strong> Jeffrey Dean Morgan, Cricket Brown, William Sadler</p>
-      <p>Una joven con discapacidad auditiva comienza a realizar milagros tras una supuesta aparición de la Virgen
-        María. Un periodista investiga los hechos, que pronto se tornan inquietantes.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/the_unholy_2021">Según Rotten Tomatoes:</a></strong></p>
-        <p>“Raramente aterradora y a menudo aburrida, The Unholy recurre a los mismos clichés gastados que ya han sido
-          explotados por innumerables películas de terror religioso.”</p>
-        <p><strong>27%</strong> Tomatometro – <strong>57%</strong>Audiencia</p>
+      <h3 class="mt-5 mb-3 fw-semibold">Ciencia Ficción</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/1984.jpg" class="card-img-top" alt="1984">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">1984</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/farenheit.jpg" class="card-img-top" alt="Farenheit 451">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Farenheit 451</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/tresCuerpos.jpg" class="card-img-top" alt="El problema de los tres cuerpos">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El problema de los tres cuerpos</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/neuromancer.jpg" class="card-img-top" alt="Neuromancer">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Neuromancer</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/solaris.jpg" class="card-img-top" alt="Solaris">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Solaris</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/parabola.jpg" class="card-img-top" alt="La parábola del sembrador">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">La parábola del sembrador </h6>
+            </div>
+          </div>
+        </div>
+
+
       </div>
-    </article>
 
-    <article id="como-entrenar">
-      <img src="img/Httyd.jpg" width="200">
-      <h2>Cómo entrenar a tu dragón (2025)</h2>
-      <p><strong>Director:</strong> Dean DeBlois</p>
-      <p><strong>Año:</strong> 2025</p>
-      <p><strong>Género:</strong> Aventura / Fantasía</p>
-      <p><strong>Duración:</strong> 1h 42min (estimado)</p>
-      <p><strong>Reparto:</strong> Mason Thames, Nico Parker, Gerard Butler, Nick Frost</p>
-      <p>En la isla de Berk, donde los vikingos y los dragones han sido enemigos por generaciones, Hiccup desafía la
-        tradición al hacerse amigo de Toothless, un temido Furia Nocturna. Su vínculo revela la verdadera naturaleza de
-        los dragones y pone en jaque las creencias de su sociedad.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/how_to_train_your_dragon_2025">Según Rotten
-              Tomatoes:</a></strong></p>
-        <p>“Captura el corazón del original, con el vínculo entre Hiccup y Toothless brillando intensamente. Aunque no
-          todos los momentos funcionan, el encanto de la película no decae.”</p>
-        <p><strong>76%</strong> Tomatometro – <strong>97%</strong>Audiencia</p>
+      <h3 class="mt-5 mb-3 fw-semibold titulo-categoria">Fantasía</h3>
+      <hr class="my-5 border-secondary">
+      <div class="row g-3">
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/JuegodeTronos.jpg" class="card-img-top" alt="Juego de Tronos">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">Juego de tronos</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/señorAnillos.jpg" class="card-img-top" alt="El señor de los anillos">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El señor de los anillos</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/harryPotter.jpg" class="card-img-top" alt="Harry Potter y la piedra filosofal">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">HArry Potter y la piedra filosofal</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/nombreViento.jpg" class="card-img-top" alt="El nombre del viento">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El nombre del viento </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/brujulaDorda.jpg" class="card-img-top" alt="La brujula dorada">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">La brújula dorada</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+          <div class="card h-100 shadow-sm" role="button">
+            <img src="img/elHobbit.jpg" class="card-img-top" alt="El Hobbit">
+            <div class="card-body p-2">
+              <h6 class="card-title text-center text-white">El Hobbit</h6>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
 
-    <article id="mision-imposible">
-      <img src="img/MisionImp.jpeg" width="200">
-      <h2>Mission: Impossible – The Final Reckoning</h2>
-      <p><strong>Director:</strong> Christopher McQuarrie</p>
-      <p><strong>Año:</strong> 2025</p>
-      <p><strong>Género:</strong> Acción / Suspenso</p>
-      <p><strong>Duración:</strong> 2h 43min (estimado)</p>
-      <p><strong>Reparto:</strong> Tom Cruise, Ving Rhames, Simon Pegg, Rebecca Ferguson</p>
-      <p>Ethan Hunt enfrenta su misión más desafiante mientras el destino del mundo y el cierre de la saga penden de un
-        hilo. Con viejos aliados, nuevos enemigos y acrobacias imposibles, esta entrega busca ser el gran final de la
-        franquicia.</p>
-      <div>
-        <p><strong><a href="https://www.rottentomatoes.com/m/mission_impossible_the_final_reckoning">Según Rotten
-              Tomatoes:</a></strong></p>
-        <p>“Gargantuesca en acción, duración y escala, The Final Reckoning es una despedida sentimental para Ethan Hunt
-          que cumple su misión con el característico estilo imposible.”</p>
-        <p><strong>80%</strong> Tomatometro – <strong>88%</strong> Audiencia</p>
+
+      <div class="modal fade" id="modalCienAñosDeSoledad" tabindex="-1" aria-labelledby="modalCienAñosDeSoledadLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalCienAñosDeSoledadLabel">Cien años de soledad</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="img/CienAños.jpg" class="img-fluid rounded " alt="Cien años de soledad" width="80%">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">Cien años de soledad narra la historia de la familia Buendía a lo largo de siete
+                    generaciones en el mítico pueblo de Macondo. A través de sus personajes inolvidables y eventos
+                    fantásticos, la novela explora temas como el amor, la soledad, el tiempo cíclico y la historia
+                    latinoamericana, todo envuelto en un estilo narrativo que mezcla lo real con lo mágico.
+                  </p>
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Autor: Gabriel García Marquéz</li>
+                    <li class="list-group-item p-2">Año: 1967</li>
+                    <li class="list-group-item p-2">Género: Realismo mágico, Ficción, Clásicos, Literatura histórica
+                    </li>
+                    <li class="list-group-item p-2">4.12/5</li>
+                  </ul>
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“Inventiva, divertida, magnética, triste, poblada de
+                    hombres y mujeres inolvidables, y con una verdad y
+                    comprensión que tocan el alma. Cien años de soledad es una obra maestra del arte de la ficción.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.goodreads.com/book/show/370523.Cien_a_os_de_soledad" class="btn btn-primary"
+                target="_blank">Ver en GoodReads</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
-  </section>
 
-  <h2>Contacto</h2>
-  <p>¿Creés que falta una peli? ¿Querés dejarnos una sugerencia? Escribinos acá 👇</p>
-  <p><strong>participaeco@gmail.com</strong></p>
+      <div class="modal fade" id="modalLaCasaDeLosEspiritus" tabindex="-1"
+        aria-labelledby="modalLaCasaDeLosEspiritusLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalLACasaDeLosEspiritusLabel">La casa de los espíritus</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="img/casaEspiritus.jpg" class="img-fluid rounded" alt="Cien años de soledad" width="80%">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">La casa de los espíritus narra la saga familiar de los Trueba, desde principios del
+                    siglo XX
+                    hasta el presente. Ambientada en un país imaginario de América Latina, la novela entrelaza lo
+                    político y
+                    lo íntimo, lo mágico y lo cotidiano, a través de generaciones marcadas por el amor, la tragedia y la
+                    transformación social.
+                  </p>
 
-  <form action="mailto:participaeco@gmail.com" method="post" enctype="text/plain">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Autor: Isabel Allende</li>
+                    <li class="list-group-item p-2">Año: 1982</li>
+                    <li class="list-group-item p-2">Género: Realismo mágico, Ficción histórica, Literatura
+                      latinoamericana
+                    </li>
+                    <li class="list-group-item p-2">4.29/5</li>
+                  </ul>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+                  <p class="fst-italic" style="color: #E2E8F0;">“Una historia poderosa y emotiva que combina lo mágico
+                    con lo real, explorando las pasiones, los
+                    conflictos y los destinos entrelazados de una familia a lo largo de generaciones.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.goodreads.com/book/show/106192.La_casa_de_los_esp_ritus?ac=1&from_search=true&qid=hIBezVaUTH&rank=1"
+                class="btn btn-primary" target="_blank">Ver en GoodReads</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+      <div class="modal fade" id="modalPedroParamo" tabindex="-1" aria-labelledby="modalPedroParamoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalPedroParamoLabel">Pedro Páramo</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="img/pedroParamo.jpg" class="img-fluid rounded" alt="Pedro Páramo" width="80%">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">Juan Preciado, cumpliendo la promesa hecha a su madre moribunda, viaja al pueblo de
+                    Comala
+                    en busca de su padre, Pedro Páramo. Allí descubre un lugar poblado por voces, fantasmas y recuerdos
+                    que se
+                    entrelazan en un mundo donde lo vivo y lo muerto conviven en un perpetuo presente.
+                  </p>
 
-    <input type="submit" value="ENVIAR">
-  </form>
-  <footer>
-    <ul>
-      <li><a href="https://www.instagram.com/eco_revieww" target="_blank">Instagram</a></li>
-      <li><a href="https://www.facebook.com/share/1Cs6Z6kbZu/" target="_blank">Facebook</a></li>
-      <li><a href="https://x.com/eco_revieww" target="_blank">X</a></li>
-      <li>Contacto</li>
-    </ul>
-    <p>©2025 Grupo 3</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Autor:Juan Rulfo</li>
+                    <li class="list-group-item p-2">Año: 1955</li>
+                    <li class="list-group-item p-2">Género: Realismo mágico, Ficción latinoamericana, Literatura clásica
+                    </li>
+                    <li class="list-group-item p-2">4.06/5</li>
+                  </ul>
 
+                  <p class="fst-italic" style="color: #E2E8F0;">“Una novela de tinte casi espectral que se inicia con la
+                    promesa de un hijo… En el lecho de la tumba de
+                    su progenitora, Juan Preciado promete viajar a Comala en busca del padre que lo engendró. Un tal
+                    Pedro
+                    Páramo… Comala es una ciudad fantasma…”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.goodreads.com/book/show/38787.Pedro_P_ramo?ac=1&from_search=true&qid=K0u7ammC3U&rank=1"
+                class="btn btn-primary" target="_blank">Ver en GoodReads</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalElOtoñoDelPatriarca" tabindex="-1"
+        aria-labelledby="modalElOtoñoDelPatriarcaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalElOtoñoDelPatriarcaLabel">El otoño del patriarca</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="img/otoñoPatriarca.jpg" class="img-fluid rounded" alt="EL otoño del patriarca" width="80%">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">La agonía y caída de un dictador en un país imaginario del Caribe-latinoamericano,
+                    presentada con un estilo cíclico, experimental y poético, donde el poder, la soledad y la decadencia
+                    se
+                    entrelazan en una narrativa de gran ambición literaria.
+                  </p>
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Autor: Gabriel García Marquéz</li>
+                    <li class="list-group-item p-2">Año: 1975</li>
+                    <li class="list-group-item p-2">Género: Realismo mágico, Ficción latinoamericana, Novela clásica
+                    </li>
+                    <li class="list-group-item p-2">3.86/5</li>
+                  </ul>
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“García Márquez desgrana una historia universal —la
+                    agonía y muerte de un dictador— de forma cíclica,
+                    experimental y real al mismo tiempo, repitiendo una anécdota siempre igual y siempre distinta…”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.goodreads.com/book/show/761.El_oto_o_del_patriarca?ref=nav_sb_ss_1_13"
+                class="btn btn-primary" target="_blank">Ver en GoodReads</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalLosPasosPerdidos" tabindex="-1" aria-labelledby="modalLosPasosPerdidosLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalLosPasosPerdidosLabel">Los pasos perdidos</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="img/pasosPerdidos.jpg" class="img-fluid rounded" alt="Los pasos perdidos" width="80%">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">Un compositor afincado en Estados Unidos abandona una vida vacía y acepta una comisión
+                    para
+                    adentrarse en la selva sudamericana en busca de instrumentos musicales primitivos. En ese viaje se
+                    sumerge
+                    en lo desconocido, atraviesa el tiempo y la civilización, y se enfrenta a la identidad, al origen y
+                    al
+                    “yo” que dejó atrás.</p>
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Autor: Alejo Carpentier</li>
+                    <li class="list-group-item p-2">Año: 1953</li>
+                    <li class="list-group-item p-2">Género: Realismo mágico, Ficción latinoamericana, Aventuras
+                      filosóficas
+                    </li>
+                    <li class="list-group-item p-2">3.91/5</li>
+                  </ul>
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“Después de 56 años de su primera edición, Los pasos
+                    perdidos continúa siendo un clásico de la literatura
+                    hispanoamericana…”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.goodreads.com/book/show/71521.Los_pasos_perdidos?ac=1&from_search=true&qid=pOVRK9ZbwQ&rank=1"
+                class="btn btn-primary" target="_blank">Ver en GoodReads</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalComoAguaParaChocolate" tabindex="-1"
+        aria-labelledby="modalComoAguaParaChocolateLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalComoAguaParaChocolateLabel">Como agua para chocolate</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img src="img/comoAgua.jpg" class="img-fluid rounded" alt="Como agua para chocolate" width="80%">
+                </div>
+                <div class="col-md-8 ps-md-3">
+                  <p class="lead">Tita, la hija menor de una familia tradicional, está condenada a no casarse para
+                    cuidar a su
+                    madre. Su pasión por la cocina se convierte en el canal para expresar sus emociones, que afectan
+                    mágicamente a quienes prueban sus platos.
+                  </p>
+
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item p-2">Autor: Laura Esquivel</li>
+                    <li class="list-group-item p-2">Año: 1989</li>
+                    <li class="list-group-item p-2">Género: Realismo mágico, Romance, Literatura mexicana</li>
+                    <li class="list-group-item p-2">3.95/5</li>
+                  </ul>
+
+                  <p class="fst-italic" style="color: #E2E8F0;">“Una novela deliciosa y sensorial que mezcla recetas,
+                    emociones y magia en una historia de amor
+                    imposible.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.goodreads.com/book/show/73716.Como_agua_para_chocolate-" class="btn btn-primary"
+                target="_blank">Ver en GoodReads</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <hr class="my-5 border-secondary">
+
+    <section class="container my-5">
+      <h2 class="mb-3 text-center fw-bold">Contacto</h2>
+      <p class="text-center text-secondary lh-base">
+        ¿Creés que falta una peli? ¿Querés dejarnos una sugerencia? Escribinos acá 👇<br>
+        <strong class="text-light">participaeco@gmail.com</strong>
+      </p>
+
+      <form action="mailto:participaeco@gmail.com" method="post" enctype="text/plain" class="mt-4 mx-auto"
+        style="max-width: 600px;">
+
+        <div class="mb-3">
+          <label for="nombre" class="form-label fw-medium">Nombre y Apellido</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label fw-medium">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="mensaje" class="form-label fw-medium">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu mensaje..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary formulario w-100">Enviar</button>
+      </form>
+    </section>
+
+
+<footer class="custom-footer py-4 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+       
+      <div class="col-md-4 mb-3 mb-md-0">
+        <ul class="list-unstyled d-flex justify-content-center justify-content-md-start gap-3 mb-0">
+          <li>
+            <a href="https://www.instagram.com/eco_revieww" target="_blank" class="footer-link">
+              <i class="bi bi-instagram me-1"></i> Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/share/1Cs6Z6kbZu/" target="_blank" class="footer-link">
+              <i class="bi bi-facebook me-1"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/eco_revieww" target="_blank" class="footer-link">
+              <i class="bi bi-twitter-x me-1"></i> X
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
+        <p class="footer-text mb-1 fw-semibold">Contacto</p>
+        <p class="footer-text mb-0">©2025 Grupo 3</p>
+      </div>
+
+      <div class="col-md-4 text-center text-md-end">
+        <a href="mailto:participaeco@gmail.com" class="footer-link">
+          <i class="bi bi-envelope me-1"></i> participaeco@gmail.com
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
