@@ -453,7 +453,7 @@ main {
 }
 
 .modal-content {
-  background-color: #2C2C2C !important;
+  background-color: #2C2C2C;
   border: 1px solid #334155;
 }
 
@@ -470,7 +470,7 @@ main {
 }
 
 .list-group-item {
-  background-color: #2C2C2C !important;
+  background-color: #2C2C2C ;
   border-color: #334155;
 }
 
