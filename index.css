@@ -9,35 +9,19 @@ body.eco-reviews {
   background-color: #0A0A0A;
   color: #E2E8F0;
 }
-.logo {
-  position: fixed;
-  top: 5px;
-  left: 40px;
-  width: 70px;
-  height: 60px;
-  background-color: #2C2C2C;
-  border: 2px solid #334155;
-  border-radius: 10px;
-  z-index: 1001;
+.logo-custom {
   cursor: pointer;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  color: #F8FAFC;
-  font-size: 11px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.2;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
 }
-.logo:hover {
-  background-color: #334155;
-  box-shadow: 0 4px 12px rgba(248, 250, 252, 0.15);
+.logo-custom:hover {
+  background-color: #3a3a3a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+@media (min-width: 768px) {
+  .buscador-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 header {
   background-color: #2C2C2C;
