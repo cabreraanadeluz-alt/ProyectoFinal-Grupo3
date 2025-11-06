@@ -343,6 +343,7 @@ main {
   }
 }
 
+
 .top {
   background: linear-gradient(90deg, #000000, #2c2c2c);
   color: #f5f5f5;
@@ -352,6 +353,7 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 .top h1 {
   font-size: 1.8rem;
   font-weight: 700;
@@ -360,11 +362,13 @@ main {
   letter-spacing: 1px;
 }
 
+
 .top ol {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 
 .top article {
   background-color: #1c1c1c;
@@ -373,26 +377,39 @@ main {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #3a3a3a;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .top article:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
+
 .top img {
   width: 100%;
-  aspect-ratio: 2/3;
-  object-fit: cover;
+  height: 350px;
+  object-fit: contain;
+  background-color: #1c1c1c;
   border-bottom: 2px solid #3a3a3a;
 }
 
+
 .top h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #f5f5f5;
-  margin: 12px 0;
+  margin: 0;
+  padding: 12px 8px;
   font-weight: 500;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .top h3 a {
   color: #f5f5f5;
@@ -400,337 +417,151 @@ main {
   transition: color 0.3s ease;
 }
 
+
 .top h3 a:hover {
   color: #bfbfbf;
 }
 
+
 @media (max-width: 768px) {
   .top {
-    padding: 15px;
+    padding: 20px;
     margin: 20px 10px;
   }
 
+
   .top h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
+
+
+  .top img {
+    height: 280px;
+  }
+
 
   .top h3 {
     font-size: 0.85rem;
-    margin: 8px 0;
+    padding: 10px 6px;
   }
 }
 
+
 @media (max-width: 480px) {
   .top {
-    padding: 10px;
+    padding: 15px;
     margin: 10px 5px;
     border-radius: 8px;
   }
 
+
   .top h1 {
-    font-size: 1.1rem;
-    margin-bottom: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
   }
+
+
+  .top img {
+    height: 200px;
+  }
+
 
   .top h3 {
-    font-size: 0.65rem;
-    margin: 4px 0;
-  }
-
-  .top-libros ol {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-  }
-
-  .top-libros article {
-    border-radius: 6px;
+    font-size: 0.75rem;
+    padding: 8px 4px;
   }
 }
-
 
 .titulo-seccion,
-.info-seccion {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 700;
-  color: #E2E8F0;
-}
-
-
 .titulo-categoria {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 600;
   color: #E2E8F0;
 }
-
-
 
 
 .card.h-100 {
   background-color: #2C2C2C;
   border: 1px solid #334155;
-  border-radius: 6px;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
 }
-
 
 .card.h-100:hover {
   box-shadow: 0 6px 16px rgba(248, 250, 252, 0.2);
-}
-
-
-.card.h-100 .card-img-top {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-}
-
-
-.card.h-100 .card-body {
-  background-color: #2C2C2C;
-}
-
-
-.card.h-100 .card-title {
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin: 0;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
-
-.card.h-100 .card-title a,
-.card.h-100 .card-title .link-item {
-  color: #E2E8F0;
-  transition: color 0.3s ease;
-}
-
-
-.card.h-100 .card-title a:hover,
-.card.h-100 .card-title .link-item:hover {
-  color: #F8FAFC;
-}
-
-
-
-
-.card.mb-3 {
-  background-color: #2C2C2C;
-  border: 2px solid #334155;
-  border-radius: 8px;
-  padding: 1rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-
-.card.mb-3:hover {
-  box-shadow: 0 8px 20px rgba(248, 250, 252, 0.15);
   transform: translateY(-2px);
 }
 
-
-.card.mb-3 .row {
-  background-color: #2C2C2C;
+.card.h-100 .card-title a {
+  color: #E2E8F0;
+  text-decoration: none;
 }
 
-
-.card.mb-3 img.img-fluid {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-
-.card.mb-3 .col-md-4,
-.card.mb-3 .col-md-8 {
-  background-color: #2C2C2C;
-}
-
-
-.card.mb-3 .col-md-4 {
-  display: flex;
-  align-items: stretch;
-}
-
-
-.card.mb-3 .card-body {
-  padding: 1.25rem;
-  background-color: #2C2C2C;
-}
-
-
-.card.mb-3 .card-title {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
+.card.h-100 .card-title a:hover {
   color: #F8FAFC;
 }
 
-
-.card.mb-3 .card-text {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 1rem;
-  color: #E2E8F0;
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
+.card.h-100 .card-img-top {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  object-position: center;
 }
 
+.modal-content {
+  background-color: #2C2C2C;
+  border: 1px solid #334155;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border-color: #334155;
+}
+
+.modal-title,
+.lead,
+.list-group-item {
+  color: #E2E8F0 !important;
+}
 
 .list-group-item {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #334155;
-  padding: 0.5rem 0.25rem;
-  font-size: 0.95rem;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: #E2E8F0;
+  background-color: #2C2C2C ;
+  border-color: #334155;
 }
 
-
-.list-group-item:last-child {
-  border-bottom: none;
-}
-
-
-.list-group-item strong {
-  color: #F8FAFC;
-  font-weight: 600;
-}
-
-
-.card-link {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: rgba(248, 250, 252, 0.7);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-
-.card-link:hover {
-  color: #F8FAFC;
-  text-decoration: underline;
-}
-
-
-
-
-section.container.my-5 h2.text-center {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 700;
-  color: #E2E8F0;
-}
-
-
-section.container.my-5 p.card-text {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: #E2E8F0;
-  line-height: 1.6;
-}
-
-
-section.container.my-5 p.card-text strong {
-  color: #F8FAFC;
-}
-
-
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: #2C2C2C;
-  border: 1px solid #334155;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.form-label {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 500;
-  color: #F8FAFC;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  display: block;
-}
 
 .form-control {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #0A0A0A;
-  border: 1px solid #334155;
+  border-color: #334155;
   color: #E2E8F0;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-  width: 100%;
-}
-
-.form-control::placeholder {
-  color: #334155;
-  font-weight: 300;
 }
 
 .form-control:focus {
   background-color: #0A0A0A;
   border-color: #F8FAFC;
   color: #F8FAFC;
-  box-shadow: 0 0 0 3px rgba(248, 250, 252, 0.15);
-  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(248, 250, 252, 0.15);
 }
 
-.form-control:hover {
-  border-color: rgba(248, 250, 252, 0.3);
+.form-control::placeholder {
+  color: #334155;
 }
 
-textarea.form-control {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.mb-3 {
-  margin-bottom: 1.5rem;
+.form-label {
+  color: #F8FAFC;
 }
 
 .btn-primary {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 600;
-  background-color: #2C2C2C;
-  color: #F8FAFC;
   border: 2px solid #334155;
-  padding: 0.75rem 2rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  width: 100%;
+  color: #F8FAFC;
 }
 
 .btn-primary:hover {
   background-color: #334155;
   border-color: #F8FAFC;
-  color: #F8FAFC;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(248, 250, 252, 0.2);
 }
-
-.btn-primary:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(248, 250, 252, 0.15);
-}
-
-.btn-primary:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(248, 250, 252, 0.25);
-}
-
 
 
 .custom-footer {
