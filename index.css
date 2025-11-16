@@ -507,6 +507,13 @@ main {
   color: #E2E8F0 !important;
 }
 
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 85%; 
+    margin: 1.75rem auto;
+  }
+}
+
 .list-group-item {
   background-color: #2C2C2C ;
   border-color: #334155;
