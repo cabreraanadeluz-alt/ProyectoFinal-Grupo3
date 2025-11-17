@@ -3,16 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchResults = document.getElementById("searchResults");
 
 
-    const cards = document.querySelectorAll("article[data-bs-toggle='modal']");
+    const cards = document.querySelectorAll("[data-bs-toggle='modal'][data-bs-target]");
 
 
-    const items = [...cards].map(card => {
-        const titulo = card.querySelector("h3, h6")?.textContent.trim();
-        const imagen = card.querySelector("img")?.src;
+    const itemsSet = new Map();
+    
+    [...cards].forEach(card => {
         const modal = card.getAttribute("data-bs-target");
-
-        return { titulo, imagen, modal };
+        if (!itemsSet.has(modal)) {
+            const titulo = card.querySelector("h3, h6")?.textContent.trim();
+            const imagen = card.querySelector("img")?.src;
+            itemsSet.set(modal, { titulo, imagen, modal });
+        }
     });
+    
+    const items = Array.from(itemsSet.values());
 
     searchInput.addEventListener("input", () => {
         const texto = searchInput.value.toLowerCase();
