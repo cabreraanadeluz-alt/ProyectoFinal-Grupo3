@@ -56,7 +56,7 @@ header {
 }
 
 .buscador-input::placeholder {
-  color: #E2E8F0;
+  color: #E2E8F0 !important;
   opacity: 0.6;
 }
 
