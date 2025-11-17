@@ -270,37 +270,112 @@ main {
     margin-top: 130px;
   }
 }
-
 #carouselExampleFade {
-  max-width: 1050px;
+  max-width: 1100px;
   margin: 0 auto;
-  background-color: #0A0A0A;
+
+  background: linear-gradient(to right, #0A0A0A 0%, #111111 40%, #1A1A1A 70%, #2C2C2C 100%);
+
+  border-radius: 18px;
+  padding: 10px 0;
+  border: 1px solid #334155;
+  box-shadow: 0 0 25px rgba(248, 250, 252, 0.15);
 }
 
 .carousel-image {
-  width: 135px;
-  height: 200px;
+  width: 145px;
+  height: 210px;
   object-fit: cover;
-  border-color: #334155 !important;
+  border-radius: 14px;
+  border: 1px solid #334155;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-.carousel-center {
-  width: 220px;
+.carousel-image:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 15px rgba(248, 250, 252, 0.15);
 }
 
 .carousel-image-center {
-  width: 180px;
-  height: 260px;
+  width: 195px;
+  height: 280px;
   object-fit: cover;
-  border-color: #334155 !important;
+  border-radius: 18px;
+  border: 1px solid #334155;
+  box-shadow: 0 0 20px rgba(248, 250, 252, 0.15);
+  transition: transform 0.3s ease;
 }
 
-.carousel-control-prev {
-  left: 10px;
+.carousel-image-center:hover {
+  transform: scale(1.07);
 }
 
+.carousel-center {
+  width: 240px;
+  padding: 12px;
+  background: rgba(42, 42, 42, 0.65);
+  border-radius: 14px;
+  border: 1px solid rgba(51, 65, 85, 0.4);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(248, 250, 252, 0.15);
+}
+
+.carousel-center h3,
+.carousel-center p {
+  color: #E2E8F0;
+}
+
+.carousel-center .badge {
+  background-color: #2C2C2C;
+  border: 1px solid #334155;
+  color: #F8FAFC;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  width: 45px;
+  height: 45px;
+}
+
+.carousel-control-prev,
 .carousel-control-next {
-  right: 10px;
+  opacity: 0.55;
+  transition: opacity 0.25s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.titulo-modern {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #E2E8F0;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.titulo-modern span {
+  color: #F8FAFC;
+}
+
+.titulo-modern::after {
+  content: "";
+  width: 55%;
+  height: 3px;
+  background: #334155;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  opacity: 0.9;
 }
 
 @media (max-width: 992px) {
