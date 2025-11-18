@@ -681,3 +681,38 @@ main {
 .footer-link:hover i {
   color: #E2E8F0;
 }
+.results-box {
+  position: absolute;
+  background: #1e1e1e;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  max-height: 280px;
+  overflow-y: auto;
+  display: none;
+  z-index: 500;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.result-item img {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.result-item span {
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+.result-item:hover {
+  background: #334155;
+}
